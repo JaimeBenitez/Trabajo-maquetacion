@@ -1,30 +1,34 @@
 @import 'variables'  
 @import 'reset'
 
+//Hacemos flexible el main para poder jugar con el contenido
 main
   display: flex  
-  
+
+//Disposición de la nav de redes sociales 
 .nav-rss
   justify-content: flex-end
-  display: flex
-  
+  display: flex  
   width: 100%
 
+//Tamaño de los iconos de redes sociales
 .rss
   max-width: 30px
   min-width: 30px
   max-height: 30px
   min-height: 30px
 
+//Esta es la imagen que ocupará la mitad de la página
 #img-principal
   width: 50%
   height: 100%
   display: inline
-  
-#principal
-  
+
+//Esta es la sección donde está el resto de la página  
+#principal  
   width: 50%
 
+//Estilo del titulo
 .principal__title
   color: $secondary-color
   text-shadow: 1px 1px black
@@ -32,23 +36,25 @@ main
   font-size: $size-title
   text-align: center
   margin-top: 33%
-  
+//Estilo del subtitulo 
 .principal__subtitle
   color: $secondary-color
   text-shadow: 1px 1px black
   font-family: $font-title
   font-size: $size-subtitle
   text-align: center
-
+//Estos span nos ayudan a hacer los saltos de linea elegantemente
 .principal__title--span
   display: block
 
 .principal__subtitle--span
   display: block
 
+//Establecemos el espacio entre el formulario y los titulos con margin-top
 #search-form
   margin-top: 200px
 
+//Estilo de las cajas de input, esto también incluye el select
 .input
   border-radius: 30px 0px 0px 30px
   height: 40px
@@ -56,43 +62,44 @@ main
   background-color: $search-color
   font-family: $font-text
   font-size: $size-text
-
+//Estilo del boton del primer submit
 #form-name-submit
   background-color: $secondary-color
   border-radius: 0px 30px 30px 0px
   height: 40px
-  width: 50px
-  
-
+  width: 50px  
+//Estilo del segundo input, esto nos permite que esté debajo y algo separado del primero
 #input_level 
   display: block
   margin-top: 10px
-  
+//Estilo del boton del 2º submit, hay que colocarle el margen para que se alinee con la caja del select
 #form-level-submit
   background-color: $secondary-color
   border-radius: 0px 30px 30px 0px
   height: 40px
   width: 50px
   margin-top:10px
-
+//Estas agrupaciónes nos permiten centrar los 2 inputs con sus botones y quitar bordes no deseados
 fieldset
   display: flex
   align-items: center
   justify-content: center
   border: 0px
-
+//Como en _reset hemos reseteado los bordes, por alguna razon por defecto nos coloca el color principal,
+//de esta manera lo quitamos
 span 
   background-color: transparent
   
 option
   background-color: transparent
 
+//Posicionamiento de los botones 
 #nav-buttons
   justify-content: space-evenly
   display: flex
   margin-top: 250px
   width: 100%
-
+//Estilo de los botones,le metemos un min-width para que todos tengan el mismo tamaño
 .buttons
   background-color: $secondary-color
   border-radius: 30px 
