@@ -1,7 +1,8 @@
 @import 'variables'  
 @import 'reset'
+
 body
-  background-color: $primary-color
+  background-color: $dark-primary-color
 //Hacemos flexible el main para poder jugar con el contenido
 main
   display: flex  
@@ -32,7 +33,7 @@ main
 
 //Estilo del titulo
 .principal__title
-  color: $secondary-color
+  color: $dark-secondary-color
   text-shadow: 1px 1px black
   font-family: $font-title
   font-size: $size-title
@@ -40,7 +41,7 @@ main
   margin-top: 33%
 //Estilo del subtitulo 
 .principal__subtitle
-  color: $secondary-color
+  color: $dark-secondary-color
   text-shadow: 1px 1px black
   font-family: $font-title
   font-size: $size-subtitle
@@ -61,18 +62,18 @@ main
   border-radius: 30px 0px 0px 30px
   height: 40px
   width: 50%  
-  background-color: $search-color
+  background-color: $dark-search-color
   font-family: $font-text
   font-size: $size-text
 //Le damos estilo y espaciado a nuestro placeholder
 #input_name
   text-indent: 15px
-  color: $text-color
+  color: $dark-text-color
 #input_name::placeholder  
-  color: $text-color
+  color: $dark-text-color
 //Estilo del boton del primer submit
 #form-name-submit
-  background-color: $secondary-color
+  background-color: $dark-secondary-color
   border-radius: 0px 30px 30px 0px
   height: 40px
   width: 50px  
@@ -80,10 +81,11 @@ main
 #input_level 
   display: block
   margin-top: 10px
-  padding-left: 10px
+  padding-left: 15px
+  color: $dark-text-color
 //Estilo del boton del 2º submit, hay que colocarle el margen para que se alinee con la caja del select
 #form-level-submit
-  background-color: $secondary-color
+  background-color: $dark-secondary-color
   border-radius: 0px 30px 30px 0px
   height: 40px
   width: 50px
@@ -101,6 +103,7 @@ span
   
 option
   background-color: transparent
+  color: $dark-text-color
 
 //Posicionamiento de los botones 
 #nav-buttons
@@ -110,12 +113,12 @@ option
   width: 100%
 //Estilo de los botones,le metemos un min-width para que todos tengan el mismo tamaño
 .buttons
-  background-color: $secondary-color
+  background-color: $dark-secondary-color
   border-radius: 30px 
   text-decoration: none  
   font-family: $font-title
   font-size: $size-subtitle
-  color: $text-color
+  color: $dark-text-color
   min-width: 30%
   text-align: center
   

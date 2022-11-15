@@ -1,10 +1,13 @@
 @import "https://fonts.googleapis.com/css2?family=Iceberg&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap";
 * {
-  background-color: #1c74ac;
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #0e3a56;
 }
 
 main {
@@ -35,7 +38,7 @@ main {
 }
 
 .principal__title {
-  color: #fba734;
+  color: #935703;
   text-shadow: 1px 1px #000;
   text-align: center;
   margin-top: 33%;
@@ -44,7 +47,7 @@ main {
 }
 
 .principal__subtitle {
-  color: #fba734;
+  color: #935703;
   text-shadow: 1px 1px #000;
   text-align: center;
   font-family: Iceberg, cursive;
@@ -62,28 +65,39 @@ main {
 .input {
   height: 40px;
   width: 50%;
-  background-color: #fef4a8;
+  background-color: #d2b902;
   border-radius: 30px 0 0 30px;
   font-family: Gloria Hallelujah, cursive;
   font-size: 20px;
 }
 
+#input_name {
+  text-indent: 15px;
+  color: #fff;
+}
+
+#input_name::placeholder {
+  color: #fff;
+}
+
 #form-name-submit {
   height: 40px;
   width: 50px;
-  background-color: #fba734;
+  background-color: #935703;
   border-radius: 0 30px 30px 0;
 }
 
 #input_level {
+  color: #fff;
   margin-top: 10px;
+  padding-left: 15px;
   display: block;
 }
 
 #form-level-submit {
   height: 40px;
   width: 50px;
-  background-color: #fba734;
+  background-color: #935703;
   border-radius: 0 30px 30px 0;
   margin-top: 10px;
 }
@@ -95,7 +109,12 @@ fieldset {
   display: flex;
 }
 
-span, option {
+span {
+  background-color: #0000;
+}
+
+option {
+  color: #fff;
   background-color: #0000;
 }
 
@@ -107,14 +126,14 @@ span, option {
 }
 
 .buttons {
-  color: #000;
+  color: #fff;
   min-width: 30%;
   text-align: center;
-  background-color: #fba734;
+  background-color: #935703;
   border-radius: 30px;
   font-family: Iceberg, cursive;
   font-size: 36px;
   text-decoration: none;
 }
 
-/*# sourceMappingURL=index.24148726.css.map */
+/*# sourceMappingURL=index.4da6c3aa.css.map */
