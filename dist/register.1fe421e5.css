@@ -1,0 +1,78 @@
+@import "https://fonts.googleapis.com/css2?family=Iceberg&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap";
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#register {
+  width: 50%;
+}
+
+#register__fieldset {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.register__subtitle {
+  color: #935703;
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  font-family: Iceberg, cursive;
+  font-size: 36px;
+}
+
+.register__input {
+  height: 40px;
+  width: 50%;
+  background-color: #d2b902;
+  border-radius: 30px;
+  font-family: Gloria Hallelujah, cursive;
+  font-size: 20px;
+}
+
+#register__username {
+  text-indent: 15px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+#register__password, #register__email {
+  text-indent: 15px;
+  color: #fff;
+  margin-top: 40px;
+  display: block;
+}
+
+#register__submit {
+  margin-top: 40px;
+}
+
+#register__toLogin {
+  color: #fff;
+  margin-top: 40px;
+}
+
+#register__img {
+  max-height: 180px;
+  max-width: 180px;
+  margin-top: 40px;
+}
+
+#register__back {
+  align-self: flex-end;
+  margin-top: 40px;
+  padding-right: 20px;
+}
+
+.arrow {
+  min-height: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  max-width: 40px;
+}
+
+/*# sourceMappingURL=register.1fe421e5.css.map */

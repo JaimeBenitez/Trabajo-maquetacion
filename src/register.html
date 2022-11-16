@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon information-Register</title>
+    <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
+    <!-- <link href="assets/sass/style.sass" rel="stylesheet"> -->
+    <!-- <link href="assets/sass/register.sass" rel="stylesheet"> -->
+    <link href="assets/sass/dark-mode.sass" rel="stylesheet">    
+    <link href="assets/sass/register-dark.sass" rel="stylesheet">
+    <!-- Como podemos observar, ademas de las importaciones también se puede escribir css directamente 
+    mediante la etiqueta <style>, aunque no es recomendable, ya que ademas de expandir el codigo de la 
+    página de manera absurda, nos impide usar Sass con todas las ventajas que trae. Dicho esto la mejor
+    manera de usar nuestras hojas de estilo es, pues, la importacion mediante la etiqueta <link>
+    <style>
+        #register{
+            width: 50%;
+        }
+    </style> -->
+</head>
+<body>
+    <main>
+        
+        
+        <img src="assets/img/digimon.jpg" id=img-principal>    
+        <section id="register">
+            <nav class="nav-rss">
+                <a href="https://www.github.com" target="_blank"><img src=assets/img/Octicons-mark-github.svg class="rss"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src=assets/img/instagram-filled.svg class="rss"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter.png class="rss"></a>
+            </nav>     
+            
+            
+            <form action="index.html" id="register__form">   
+                <fieldset id="register__fieldset"> 
+                    <h2 class="register__subtitle">Register Data</h2>            
+                    <input type="text" name="register__username" id="register__username" class="register__input" placeholder="Username">
+                    <input type="password" name="register__password" id="register__password" class="register__input" placeholder="Password">
+                    <input type="email" name="register__email" id="register__email" class="register__input" placeholder="email">                            
+                    <button type="submit" name="register__submit" id="register__submit" class="buttons">Submit</button>
+                    <a href="login.html" id="register__toLogin">Do you have an account? Go to login</a>
+                    <img src="assets/img/Agumon_registro-sf.png" id="register__img">
+                    <a href="index.html" id="register__back"><img src=assets/img/back-arrow.svg class="arrow"></a>
+                </fieldset>                
+            </form>
+            
+        </section>
+    </main>
+    
+</body>
+</html>

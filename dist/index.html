@@ -22,26 +22,26 @@
             </nav>          
             <h1 class="principal__title">Digimon <span class="principal__title--span">information</span></h1>
             <h2 class="principal__subtitle">Your best <span class="principal__subtitle--span">digimon database</span></h2>
-            <form action="lista.html" id="search-form">   
+            <form action="lista.html" id="principal__form">   
                 <fieldset>             
-                    <input type="text" name="name" id="input_name" class="input" placeholder="Name">
-                    <button type="submit" id="form-name-submit"><span class="fa-solid fa-magnifying-glass"></span></button>                
+                    <input type="text" name="principal__name" id="principal__name" class="principal__input" placeholder="Name">
+                    <button type="submit" id="principal__name--submit"><span class="fa-solid fa-magnifying-glass"></span></button>                
                 </fieldset>  
                 <fieldset>       
-                    <select name="level" id="input_level" class="input">                
+                    <select name="principal__level" id="principal__level" class="principal__input">                
                         <option value="fresh">Fresh</option>
-                        <option value="fresh">In-training</option>
-                        <option value="fresh">Rookie</option>
-                        <option value="fresh">Champion</option>
-                        <option value="fresh">Ultimate</option>
-                        <option value="fresh">Mega</option>                        
+                        <option value="In-training">In-training</option>
+                        <option value="rookie">Rookie</option>
+                        <option value="champion">Champion</option>
+                        <option value="ultimate">Ultimate</option>
+                        <option value="mega">Mega</option>                        
                     </select>
-                    <button type="submit" id="form-level-submit"><span class="fa-solid fa-magnifying-glass"></span></button>
+                    <button type="submit" id="principal__level--submit"><span class="fa-solid fa-magnifying-glass"></span></button>
                 </fieldset>
-                <nav id="nav-buttons">
-                    <a href="" target="_blank" class="buttons">Contact</a>
-                    <a href="" target="_blank" class="buttons">Register</a>
-                    <a href="" target="_blank" class="buttons">Login</a>
+                <nav id="principal__nav-buttons">
+                    <a href="" class="buttons">Contact</a>
+                    <a href="/register.html" class="buttons">Register</a>
+                    <a href="/login.html" class="buttons">Login</a>
                 </nav>
             </form>
         </section>
