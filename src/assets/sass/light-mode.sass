@@ -1,29 +1,19 @@
 @import 'variables'  
 @import 'reset'
-@import 'botonCambio'
+
 body
-  background-color: $primary-color
+  background-color: $light-primary-color
 //Hacemos flexible el main para poder jugar con el contenido
 main
   display: flex  
 
 //Disposición de la nav de redes sociales 
 .nav-rss
-  justify-content: space-between
+  justify-content: flex-end
   display: flex  
   width: 100%
-  max-height: 40px
 
-ul 
-  background-color : $secondary-color
-  border-radius: 30px
-  height: 30px
-  widht: 90px
-  padding: 5px
 //Tamaño de los iconos de redes sociales
-li
-  display: inline
-  list-style: none
 .rss
   max-width: 30px
   min-width: 30px
@@ -33,11 +23,9 @@ li
 //Esta es la imagen que ocupará la mitad de la página
 #img-principal
   width: 50vw
-  height: 100vh 
+  height: 100vh
   display: inline
-  object-fit: cover
-  object-position: center top
-   
+  filter: grayscale(0.2)
 
 //Esta es la sección donde está el resto de la página  
 #principal  
@@ -46,7 +34,7 @@ li
 
 //Estilo del titulo
 .principal__title
-  color: $secondary-color
+  color: $light-secondary-color
   text-shadow: 1px 1px black
   font-family: $font-title
   font-size: $size-title
@@ -54,7 +42,7 @@ li
   margin-top: 50px
 //Estilo del subtitulo 
 .principal__subtitle
-  color: $secondary-color
+  color: $light-secondary-color
   text-shadow: 1px 1px black
   font-family: $font-title
   font-size: $size-subtitle
@@ -75,33 +63,35 @@ li
   border-radius: 30px 0px 0px 30px
   height: 40px
   width: 50%  
-  background-color: $search-color
+  background-color: $light-search-color
   font-family: $font-text
   font-size: $size-text
 //Le damos estilo y espaciado a nuestro placeholder
 #principal__name
   text-indent: 15px
-  color: $text-color
-
+  color: $light-text-color
+#principal__name::placeholder  
+  color: $light-text-color
 //Estilo del boton del primer submit
 #principal__name--submit
-  background-color: $secondary-color
+  background-color: $light-secondary-color
   border-radius: 0px 30px 30px 0px
   height: 40px
   width: 50px  
 //Estilo del segundo input, esto nos permite que esté debajo y algo separado del primero
-#principal__level 
+#principal__level
   display: block
   margin-top: 10px
-  padding-left: 10px
+  padding-left: 15px
+  color: $light-text-color
 //Estilo del boton del 2º submit, hay que colocarle el margen para que se alinee con la caja del select
 #principal__level--submit
-  background-color: $secondary-color
+  background-color: $light-secondary-color
   border-radius: 0px 30px 30px 0px
   height: 40px
   width: 50px
   margin-top:10px
-//Estas agrupaciónes nos permiten centrar los inputs con sus botones y quitar bordes no deseados
+//Estas agrupaciónes nos permiten centrar los 2 inputs con sus botones y quitar bordes no deseados
 fieldset
   display: flex
   align-items: center
@@ -111,24 +101,28 @@ fieldset
 //de esta manera lo quitamos
 span 
   background-color: transparent
+//En este caso tenemos que darle un color concreto a los iconos de los botones
+button > span
+  color:$light-text-color   
   
 option
   background-color: transparent
+  color: $light-text-color
 
 //Posicionamiento de los botones 
 #principal__nav-buttons
   justify-content: space-evenly
   display: flex
-  margin-top: 170px
+  margin-top: 180px
   width: 100%
 //Estilo de los botones,le metemos un min-width para que todos tengan el mismo tamaño
 .buttons
-  background-color: $secondary-color
+  background-color: $light-secondary-color
   border-radius: 30px 
   text-decoration: none  
   font-family: $font-title
   font-size: $size-subtitle
-  color: $text-color
+  color: $light-text-color
   min-width: 30%
   text-align: center
   

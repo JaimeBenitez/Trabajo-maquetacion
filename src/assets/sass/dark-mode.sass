@@ -1,5 +1,6 @@
 @import 'variables'  
 @import 'reset'
+@import 'botonCambio'
 
 body
   background-color: $dark-primary-color
@@ -9,10 +10,21 @@ main
 
 //Disposición de la nav de redes sociales 
 .nav-rss
-  justify-content: flex-end
+  justify-content: space-between
   display: flex  
   width: 100%
+  max-height: 40px
 
+ul 
+  background-color : $dark-secondary-color
+  border-radius: 30px
+  height: 30px
+  widht: 90px
+  padding: 5px
+//Tamaño de los iconos de redes sociales
+li
+  display: inline
+  list-style: none
 //Tamaño de los iconos de redes sociales
 .rss
   max-width: 30px
@@ -23,8 +35,10 @@ main
 //Esta es la imagen que ocupará la mitad de la página
 #img-principal
   width: 50vw
-  height: 100vh
+  height: 100vh 
   display: inline
+  object-fit: cover
+  object-position: center top
 
 //Esta es la sección donde está el resto de la página  
 #principal  

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimon information-Register</title>
     <link href="/logo.7c849107.png" rel="icon" type="image/x-icon">
-    <!-- <link href="assets/sass/style.sass" rel="stylesheet"> -->
-    <!-- <link href="assets/sass/register.sass" rel="stylesheet"> -->
-    <link href="/index.4da6c3aa.css" rel="stylesheet">    
-    <link href="/register.1fe421e5.css" rel="stylesheet">
+    <link href="/index.24148726.css" rel="stylesheet"> 
+    <link href="/register.fa1a39c1.css" rel="stylesheet">
+    <!-- <link href="assets/sass/dark-mode.sass" rel="stylesheet">    
+    <link href="assets/sass/register-dark.sass" rel="stylesheet"> -->
     <!-- Como podemos observar, ademas de las importaciones también se puede escribir css directamente 
     mediante la etiqueta <style>, aunque no es recomendable, ya que ademas de expandir el codigo de la 
     página de manera absurda, nos impide usar Sass con todas las ventajas que trae. Dicho esto la mejor
@@ -18,18 +18,28 @@
         #register{
             width: 50%;
         }
-    </style> -->
+    </style> --> 
 </head>
 <body>
     <main>
         
         
-        <img src="/digimon.ecd12cdc.jpg" id="img-principal">    
+        <picture>
+            <source media="(min-width: 980px)" srcset="/Digimon-Adventure-2020.dc862791.jpg">                            
+            <source srcset="/digimon.ecd12cdc.jpg">
+            <img src="/digimon.ecd12cdc.jpg" id="img-principal">   
+        </picture>    
         <section id="register">
             <nav class="nav-rss">
-                <a href="https://www.github.com" target="_blank"><img src="/Octicons-mark-github.24637a2d.svg" class="rss"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="/instagram-filled.db5d220d.svg" class="rss"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="/twitter.a11dcc2c.png" class="rss"></a>
+                <label id="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <ul>
+                    <li><a href="https://www.github.com" target="_blank"><img src="/Octicons-mark-github.24637a2d.svg" class="rss"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="/instagram-filled.db5d220d.svg" class="rss"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src="/twitter.a11dcc2c.png" class="rss"></a></li>
+                </ul>
             </nav>     
             
             

@@ -6,63 +6,58 @@
   padding: 0;
 }
 
-#login {
+#register {
   width: 50%;
 }
 
-#login__fieldset {
+#register__fieldset {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.login__subtitle {
-  color: #935703;
+.register__subtitle {
+  color: #fba734;
   text-shadow: 1px 1px #000;
   text-align: center;
   font-family: Iceberg, cursive;
   font-size: 36px;
 }
 
-.login__input {
+.register__input {
   height: 40px;
   width: 50%;
-  background-color: #d2b902;
+  background-color: #fef4a8;
   border-radius: 30px;
   font-family: Gloria Hallelujah, cursive;
   font-size: 20px;
 }
 
-#login__username {
+#register__username {
   text-indent: 15px;
-  color: #fff;
+  color: #000;
   margin-top: 40px;
 }
 
-#login__password {
+#register__password, #register__email {
   text-indent: 15px;
-  color: #fff;
+  color: #000;
   margin-top: 40px;
   display: block;
 }
 
-#login__submit {
+#register__submit, #register__toLogin {
   margin-top: 40px;
 }
 
-#login__toRegister {
-  color: #fff;
+#register__img {
+  max-height: 180px;
+  max-width: 180px;
   margin-top: 40px;
 }
 
-#login__img {
-  max-height: 240px;
-  max-width: 240px;
-  margin-top: 40px;
-}
-
-#login__back {
+#register__back {
   align-self: flex-end;
   margin-top: 40px;
   padding-right: 20px;
@@ -75,4 +70,4 @@
   max-width: 40px;
 }
 
-/*# sourceMappingURL=login.05ba9e01.css.map */
+/*# sourceMappingURL=register.fa1a39c1.css.map */

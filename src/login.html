@@ -6,22 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimon information-Login</title>
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
-    <!-- <link href="assets/sass/style.sass" rel="stylesheet">    
-    <link href="assets/sass/login.sass" rel="stylesheet"> -->
-    <link href="assets/sass/dark-mode.sass" rel="stylesheet">
-    <link href="assets/sass/login-dark.sass" rel="stylesheet">
+    <link href="assets/sass/style.sass" rel="stylesheet">    
+    <link href="assets/sass/login.sass" rel="stylesheet">
+    <!-- <link href="assets/sass/dark-mode.sass" rel="stylesheet"> -->
+    <!-- <link href="assets/sass/login-dark.sass" rel="stylesheet"> -->
    
 </head>
 <body>
     <main>
         
         
-        <img src="assets/img/digimon.jpg" id=img-principal>    
+        <picture>
+            <source
+                    media="(min-width: 980px)"
+                    srcset="assets/img/Digimon-Adventure-2020.jpg"/>                            
+            <source srcset="assets/img/digimon.jpg"/>
+            <img src="assets/img/digimon.jpg" id=img-principal>   
+        </picture>   
         <section id="login">
             <nav class="nav-rss">
-                <a href="https://www.github.com" target="_blank"><img src=assets/img/Octicons-mark-github.svg class="rss"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src=assets/img/instagram-filled.svg class="rss"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter.png class="rss"></a>
+                <label id="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <ul>
+                    <li><a href="https://www.github.com" target="_blank"><img src=assets/img/Octicons-mark-github.svg class="rss"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src=assets/img/instagram-filled.svg class="rss"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter.png class="rss"></a></li>
+                </ul>
             </nav>     
             
             

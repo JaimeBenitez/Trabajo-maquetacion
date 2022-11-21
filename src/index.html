@@ -6,19 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimon information</title>
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
-    <!-- <link href="assets/sass/style.sass" rel="stylesheet"> -->
-    <link href="assets/sass/dark-mode.sass" rel="stylesheet">
+    <link href="assets/sass/style.sass" rel="stylesheet" id="estilo">
+    <!-- <link href="assets/sass/dark-mode.sass" rel="stylesheet"> -->
+    <!-- <link href="assets/sass/light-mode.sass" rel="stylesheet"> -->
 </head>
 <body>
     <main>
         
-        
-        <img src="assets/img/digimon.jpg" id=img-principal>    
+        <picture>
+        <source
+                media="(min-width: 980px)"
+                srcset="assets/img/Digimon-Adventure-2020.jpg"/>                            
+        <source srcset="assets/img/digimon.jpg"/>
+        <img src="assets/img/digimon.jpg" id=img-principal>   
+        </picture> 
         <section id="principal">
             <nav class="nav-rss">
-                <a href="https://www.github.com" target="_blank"><img src=assets/img/Octicons-mark-github.svg class="rss"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src=assets/img/instagram-filled.svg class="rss"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter.png class="rss"></a>
+                <label id="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <ul>
+                    <li><a href="https://www.github.com" target="_blank"><img src=assets/img/Octicons-mark-github.svg class="rss"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src=assets/img/instagram-filled.svg class="rss"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter.png class="rss"></a></li>
+                </ul>
             </nav>          
             <h1 class="principal__title">Digimon <span class="principal__title--span">information</span></h1>
             <h2 class="principal__subtitle">Your best <span class="principal__subtitle--span">digimon database</span></h2>
@@ -46,6 +58,7 @@
             </form>
         </section>
     </main>
+    <script src="assets/js/modes.js"></script>
     <script src="https://kit.fontawesome.com/47648965d1.js" crossorigin="anonymous"></script>
 </body>
 </html>
