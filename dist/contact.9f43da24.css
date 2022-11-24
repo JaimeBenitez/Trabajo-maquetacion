@@ -1,0 +1,88 @@
+@import "https://fonts.googleapis.com/css2?family=Iceberg&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap";
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#contact {
+  width: 50%;
+  padding: 20px;
+}
+
+#contact__fieldset {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact__subtitle {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  font-family: Iceberg, cursive;
+  font-size: 36px;
+}
+
+#contact__collaborators, #contact__faq, #contact__suggestions {
+  width: 60%;
+  margin-top: 40px;
+}
+
+#contact__img {
+  max-height: 390px;
+  max-width: 390px;
+  margin-top: 40px;
+}
+
+#contact__back {
+  align-self: flex-end;
+  padding-right: 20px;
+}
+
+.arrow {
+  min-height: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  filter: var(--icon-color);
+}
+
+.collaborators {
+  background-color: var(--primary-color);
+  z-index: 1;
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  transition: all 2s;
+  position: absolute;
+  right: -100vw;
+}
+
+.show {
+  transition: all 2s;
+  right: 50vw;
+}
+
+.collaborators__title {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  margin-top: 50px;
+  font-family: Iceberg, cursive;
+  font-size: 60px;
+}
+
+.collaborators__subtitle {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  margin: 10px;
+  font-family: Iceberg, cursive;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=contact.9f43da24.css.map */

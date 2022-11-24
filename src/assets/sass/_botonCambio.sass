@@ -2,16 +2,22 @@
 @import 'reset'
 
 [tema="light"]
-    $primary-color: #1C74AC
-    $secondary-color: #FBA734
-    $search-color: #FEF4A8
-    $text-color: black
+    --primary-color: #{$primary-color}
+    --secondary-color: #{$secondary-color}
+    --search-color: #{$search-color}
+    --text-color: #{$text-color}
+    --icon-color: #{$icon-color}
+    --link-color: #{$link-color}
+    --after-link-color: #{$after-link-color}
 
 [tema="dark"]
-    $primary-color: black
-    $secondary-color: lightgrey
-    $search-color: white
-    $text-color:  black
+    --primary-color: #{$dark-primary-color}
+    --secondary-color: #{$dark-secondary-color}
+    --search-color: #{$dark-search-color}
+    --text-color:  #{$dark-text-color}
+    --icon-color:  #{$dark-icon-color}
+    --link-color:  #{$dark-link-color}
+    --after-link-color: #{$after-dark-link-color}
 
 //Botón de cambio de tema
 
@@ -20,6 +26,7 @@
     display: inline-block
     width: 60px
     height: 34px
+    
   
   
 #switch input 
@@ -35,7 +42,7 @@
     left: 0
     right: 0
     bottom: 0
-    background-color:$text-color
+    background-color: var(--search-color)
     -webkit-transition: .4s
     transition: .4s
   
@@ -47,17 +54,17 @@
     width: 26px
     left: 4px
     bottom: 4px
-    background-color: $secondary-color
+    background-color: var(--secondary-color)
     -webkit-transition: .4s
     transition: .4s
   
   
 input:checked + .slider 
-    background-color: $search-color
+    background-color: var(--search-color)
   
   
 input:focus + .slider 
-    box-shadow: 0 0 1px $search-color
+    box-shadow: 0 0 1px var(--search-color)
   
   
 input:checked + .slider:before 

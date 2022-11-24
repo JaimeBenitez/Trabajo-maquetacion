@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digimon information-Login</title>
+    <title>Digimon information-Contact</title>
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
-    <link href="assets/sass/style.sass" rel="stylesheet">    
-    <link href="assets/sass/login.sass" rel="stylesheet">
+    <link href="assets/sass/style.sass" rel="stylesheet"> 
+    <link href="assets/sass/suggestions.sass" rel="stylesheet">
     
    
 </head>
@@ -21,35 +21,36 @@
                     srcset="assets/img/Digimon-Adventure-2020.jpg"/>                            
             <source srcset="assets/img/digimon.jpg"/>
             <img src="assets/img/digimon.jpg" id=img-principal>   
-        </picture>   
-        <section id="login">
+        </picture>    
+        <section id="suggestions">
             <nav class="nav-rss">
                 <label id="switch">
                     <input type="checkbox" checked>
                     <span class="slider round"></span>
                 </label>
                 <ul>
-                    <li><a href="https://www.github.com" target="_blank"><img src=assets/img/Octicons-mark-github.svg class="rss"></a></li>
+                    <li><a href="https://www.github.com" target="_blank"><img src=assets/img/github.svg class="rss"></a></li>
                     <li><a href="https://www.instagram.com" target="_blank"><img src=assets/img/instagram-filled.svg class="rss"></a></li>
                     <li><a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter.png class="rss"></a></li>
                 </ul>
             </nav>     
             
             
-            <form action="index.html" id="login__form">   
-                <fieldset id="login__fieldset"> 
-                    <h2 class="login__subtitle">Login</h2>            
-                    <input type="text" name="login__username" id="login__username" class="login__input" placeholder="Username">
-                    <input type="password" name="login__password" id="login__password" class="login__input" placeholder="Password">                                               
-                    <button type="submit" name="login__submit" id="login__submit" class="buttons">Submit</button>
-                    <a href="register.html" id="login__toRegister">Don't you have an account? Go to register</a>
-                    <img src="assets/img/Gabumon-sf.png" id="login__img">
-                    <a href="index.html" id="login__back"><img src=assets/img/back-arrow.svg class="arrow"></a>
+            <form  id="suggestions__form" action="index.html">   
+                <fieldset id="suggestions__fieldset"> 
+                    <h2 class="suggestions__subtitle">Suggestions</h2>            
+                    <textarea  cols="30" rows="5" id="suggestions__textarea" placeholder="Write your suggestions"></textarea>                    
+                    <button type="submit" id="suggestions__submit" class="buttons">Submit</button>
+                    <img src="assets/img/Patamon-sf.png" id="suggestions__img">
+                    <a href="index.html" id="suggestions__back" ><img src=assets/img/back-arrow.svg class="arrow"></a>
                 </fieldset>                
             </form>
             
-        </section>
+        </section>       
+        
     </main>
+    
     <script src="assets/js/modes.js"></script>
+    
 </body>
 </html>

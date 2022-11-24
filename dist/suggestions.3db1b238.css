@@ -1,0 +1,92 @@
+@import "https://fonts.googleapis.com/css2?family=Iceberg&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap";
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#suggestions {
+  width: 50%;
+  padding: 20px;
+}
+
+#suggestions__fieldset {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.suggestions__subtitle {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  font-family: Iceberg, cursive;
+  font-size: 36px;
+}
+
+#suggestions__textarea {
+  width: 60%;
+  background-color: var(--search-color);
+  text-indent: 15px;
+  color: var(--text-color);
+  border-radius: 30px;
+  margin-top: 20px;
+  font-family: Gloria Hallelujah, cursive;
+  font-size: 20px;
+}
+
+#suggestions__submit {
+  width: 60%;
+  margin-top: 40px;
+}
+
+#suggestions__img {
+  max-height: 310px;
+  max-width: 310px;
+  margin-top: 40px;
+}
+
+#suggestions__back {
+  align-self: flex-end;
+  padding-right: 20px;
+}
+
+.arrow {
+  min-height: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  filter: var(--icon-color);
+}
+
+#collaborators {
+  background-color: var(--primary-color);
+  z-index: 1000000;
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  position: absolute;
+}
+
+.collaborators__title {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  margin-top: 50px;
+  font-family: Iceberg, cursive;
+  font-size: 60px;
+}
+
+.collaborators__subtitle {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  margin: 10px;
+  font-family: Iceberg, cursive;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=suggestions.3db1b238.css.map */

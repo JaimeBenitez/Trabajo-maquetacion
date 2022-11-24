@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" tema="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon information-Contact</title>
+    <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
+    <link href="assets/sass/style.sass" rel="stylesheet"> 
+    <link href="assets/sass/contact.sass" rel="stylesheet">
+    
+   
+</head>
+<body>
+    <main>
+        
+        
+        <picture>
+            <source
+                    media="(min-width: 980px)"
+                    srcset="assets/img/Digimon-Adventure-2020.jpg"/>                            
+            <source srcset="assets/img/digimon.jpg"/>
+            <img src="assets/img/digimon.jpg" id=img-principal>   
+        </picture>    
+        <section id="contact">
+            <nav class="nav-rss">
+                <label id="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <ul>
+                    <li><a href="https://www.github.com" target="_blank"><img src=assets/img/github.svg class="rss"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src=assets/img/instagram-filled.svg class="rss"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter.png class="rss"></a></li>
+                </ul>
+            </nav>     
+            
+            
+            <form  id="contact__form">   
+                <fieldset id="contact__fieldset"> 
+                    <h2 class="contact__subtitle">Contact Data</h2>            
+                    <button class="buttons" id="contact__collaborators">Collaborators</button>
+                    <a href="https://digimon-api.vercel.app/" id="contact__faq" class="buttons">Faq</a>
+                    <a href="suggestions.html" id="contact__suggestions" class="buttons">Suggestions</a>
+                    <img src="assets/img/Patamon-sf.png" id="contact__img">
+                    <a href="index.html" id="contact__back" ><img src=assets/img/back-arrow.svg class="arrow"></a>
+                </fieldset>                
+            </form>
+            
+        </section>
+        <section class="collaborators">
+            <h2 class="collaborators__title">Original API Idea</h2>
+            <h3 class="collaborators__subtitle">Shadow Smith</h3>
+            <h2 class="collaborators__title">Web Development <span class="collaborators__title--span">& Design</span></h2>
+            <h3 class="collaborators__subtitle">Jaime Benitez</h3>
+            <h2 class="collaborators__title">Special thanks</h2>
+            <h3 class="collaborators__subtitle">Alejandro Carmona - Design</h3>
+            <h3 class="collaborators__subtitle">Cristina Garcia - Frontend Development</h3>
+            <h3 class="collaborators__subtitle">Jose Manuel Sánchez - Backend Development</h3>
+        </section>
+        
+    </main>
+    
+    <script src="assets/js/modes.js"></script>
+    <script src="assets/js/collaborators.js"></script>
+</body>
+</html>

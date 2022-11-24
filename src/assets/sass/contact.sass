@@ -1,0 +1,93 @@
+//Estilo para la página de registro
+@import 'variables'  
+@import 'reset'
+
+
+
+
+#contact
+    width: 50%
+    padding: 20px
+
+
+#contact__fieldset
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    
+.contact__subtitle
+    color: var(--secondary-color)
+    text-shadow: 1px 1px black
+    font-family: $font-title
+    font-size: $size-subtitle
+    text-align: center
+
+
+
+
+#contact__collaborators
+    margin-top: 40px
+    width: 60%
+    
+
+#contact__faq
+    margin-top: 40px
+    width: 60%
+
+#contact__suggestions
+    margin-top: 40px
+    width: 60%
+
+#contact__img
+    margin-top: 40px
+    max-height: 390px
+    max-width: 390px
+    
+
+#contact__back    
+    padding-right: 20px
+    align-self:  flex-end
+
+.arrow
+    min-height: 40px
+    max-height: 40px
+    min-width: 40px
+    max-width: 40px
+    filter: var(--icon-color)
+
+
+    
+.collaborators
+    position: absolute
+    right: -100vw
+    background-color: var(--primary-color)
+    z-index: 1   
+    width: 50vw
+    height: 100vh     
+    object-fit: cover
+    object-position: center top
+    transition: all 2s ease
+
+.show 
+    right: 50vw
+    transition: all 2s ease
+    
+    
+
+.collaborators__title
+    color: var(--secondary-color)
+    text-shadow: 1px 1px black
+    font-family: $font-title
+    font-size: $size-title
+    text-align: center
+    margin-top: 50px
+
+.collaborators__subtitle
+    color: var(--secondary-color)
+    text-shadow: 1px 1px black
+    font-family: $font-title
+    font-size: $size-text
+    text-align: center
+    margin: 10px
+

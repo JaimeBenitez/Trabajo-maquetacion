@@ -4,7 +4,7 @@
 
 #login
     width: 50%
-
+    padding: 20px
 
 
 #login__fieldset
@@ -14,7 +14,7 @@
     justify-content: center
     
 .login__subtitle
-    color: $secondary-color
+    color: var(--secondary-color)
     text-shadow: 1px 1px black
     font-family: $font-title
     font-size: $size-subtitle
@@ -24,28 +24,33 @@
     border-radius: 30px
     height: 40px
     width: 50%  
-    background-color: $search-color
+    background-color: var(--search-color)
     font-family: $font-text
     font-size: $size-text
 
 #login__username
     margin-top: 40px
     text-indent: 15px
-    color: $text-color
+    color: var(--text-color)
     
 
 #login__password
     display: block
     margin-top: 40px
     text-indent: 15px
-    color: $text-color
+    color: var(--text-color)
 
 #login__submit
     margin-top: 40px
 
 #login__toRegister
     margin-top: 40px
-   
+    color: var(--link-color)
+ 
+#login__toRegister:visited
+    color: var(--after-link-color)  
+#login__toRegister:hover
+    color: var(--secondary-color)   
 
 #login__img
     margin-top: 40px
@@ -53,8 +58,7 @@
     max-width: 240px
     
 
-#login__back
-    margin-top: 40px
+#login__back    
     padding-right: 20px
     align-self:  flex-end
 
@@ -63,4 +67,5 @@
     max-height: 40px
     min-width: 40px
     max-width: 40px
+    filter: var(--icon-color)
   

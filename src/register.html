@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" tema="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,7 @@
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
     <link href="assets/sass/style.sass" rel="stylesheet"> 
     <link href="assets/sass/register.sass" rel="stylesheet">
-    <!-- <link href="assets/sass/dark-mode.sass" rel="stylesheet">    
-    <link href="assets/sass/register-dark.sass" rel="stylesheet"> -->
+   
     <!-- Como podemos observar, ademas de las importaciones también se puede escribir css directamente 
     mediante la etiqueta <style>, aunque no es recomendable, ya que ademas de expandir el codigo de la 
     página de manera absurda, nos impide usar Sass con todas las ventajas que trae. Dicho esto la mejor
@@ -34,7 +33,7 @@
         <section id="register">
             <nav class="nav-rss">
                 <label id="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" checked>
                     <span class="slider round"></span>
                 </label>
                 <ul>
@@ -60,6 +59,6 @@
             
         </section>
     </main>
-    
+    <script src="assets/js/modes.js"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@
 
 #login {
   width: 50%;
+  padding: 20px;
 }
 
 #login__fieldset {
@@ -18,7 +19,7 @@
 }
 
 .login__subtitle {
-  color: #fba734;
+  color: var(--secondary-color);
   text-shadow: 1px 1px #000;
   text-align: center;
   font-family: Iceberg, cursive;
@@ -28,7 +29,7 @@
 .login__input {
   height: 40px;
   width: 50%;
-  background-color: #fef4a8;
+  background-color: var(--search-color);
   border-radius: 30px;
   font-family: Gloria Hallelujah, cursive;
   font-size: 20px;
@@ -36,19 +37,32 @@
 
 #login__username {
   text-indent: 15px;
-  color: #000;
+  color: var(--text-color);
   margin-top: 40px;
 }
 
 #login__password {
   text-indent: 15px;
-  color: #000;
+  color: var(--text-color);
   margin-top: 40px;
   display: block;
 }
 
-#login__submit, #login__toRegister {
+#login__submit {
   margin-top: 40px;
+}
+
+#login__toRegister {
+  color: var(--link-color);
+  margin-top: 40px;
+}
+
+#login__toRegister:visited {
+  color: var(--after-link-color);
+}
+
+#login__toRegister:hover {
+  color: var(--secondary-color);
 }
 
 #login__img {
@@ -59,7 +73,6 @@
 
 #login__back {
   align-self: flex-end;
-  margin-top: 40px;
   padding-right: 20px;
 }
 
@@ -68,6 +81,7 @@
   max-height: 40px;
   min-width: 40px;
   max-width: 40px;
+  filter: var(--icon-color);
 }
 
 /*# sourceMappingURL=login.93cc8c05.css.map */

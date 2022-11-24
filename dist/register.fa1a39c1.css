@@ -6,8 +6,81 @@
   padding: 0;
 }
 
+[tema="light"] {
+  --primary-color: #1c74ac;
+  --secondary-color: #fba734;
+  --search-color: #fef4a8;
+  --text-color: black;
+  --icon-color: none;
+  --link-color: black;
+  --after-link-color: purple;
+}
+
+[tema="dark"] {
+  --primary-color: black;
+  --secondary-color: lightgrey;
+  --search-color: white;
+  --text-color: black;
+  --icon-color: invert(81%) sepia(99%) saturate(15%) hue-rotate(252deg) brightness(112%) contrast(100%);
+  --link-color: white;
+  --after-link-color: lightgrey;
+}
+
+#switch {
+  width: 60px;
+  height: 34px;
+  display: inline-block;
+  position: relative;
+}
+
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  cursor: pointer;
+  background-color: var(--search-color);
+  transition: all .4s;
+  position: absolute;
+  inset: 0;
+}
+
+.slider:before {
+  content: "";
+  height: 26px;
+  width: 26px;
+  background-color: var(--secondary-color);
+  transition: all .4s;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+}
+
+input:checked + .slider {
+  background-color: var(--search-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--search-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 #register {
   width: 50%;
+  padding: 20px;
 }
 
 #register__fieldset {
@@ -18,7 +91,7 @@
 }
 
 .register__subtitle {
-  color: #fba734;
+  color: var(--secondary-color);
   text-shadow: 1px 1px #000;
   text-align: center;
   font-family: Iceberg, cursive;
@@ -28,7 +101,7 @@
 .register__input {
   height: 40px;
   width: 50%;
-  background-color: #fef4a8;
+  background-color: var(--search-color);
   border-radius: 30px;
   font-family: Gloria Hallelujah, cursive;
   font-size: 20px;
@@ -36,19 +109,32 @@
 
 #register__username {
   text-indent: 15px;
-  color: #000;
+  color: var(--text-color);
   margin-top: 40px;
 }
 
 #register__password, #register__email {
   text-indent: 15px;
-  color: #000;
+  color: var(--text-color);
   margin-top: 40px;
   display: block;
 }
 
-#register__submit, #register__toLogin {
+#register__submit {
   margin-top: 40px;
+}
+
+#register__toLogin {
+  color: var(--link-color);
+  margin-top: 40px;
+}
+
+#register__toLogin:visited {
+  color: var(--after-link-color);
+}
+
+#register__toLogin:hover {
+  color: var(--secondary-color);
 }
 
 #register__img {
@@ -58,8 +144,8 @@
 }
 
 #register__back {
+  width: 30px;
   align-self: flex-end;
-  margin-top: 40px;
   padding-right: 20px;
 }
 
@@ -68,6 +154,7 @@
   max-height: 40px;
   min-width: 40px;
   max-width: 40px;
+  filter: var(--icon-color);
 }
 
 /*# sourceMappingURL=register.fa1a39c1.css.map */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" tema="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,7 @@
     <title>Digimon information</title>
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
     <link href="assets/sass/style.sass" rel="stylesheet" id="estilo">
-    <!-- <link href="assets/sass/dark-mode.sass" rel="stylesheet"> -->
-    <!-- <link href="assets/sass/light-mode.sass" rel="stylesheet"> -->
+    
 </head>
 <body>
     <main>
@@ -23,15 +22,16 @@
         <section id="principal">
             <nav class="nav-rss">
                 <label id="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" checked>
                     <span class="slider round"></span>
                 </label>
                 <ul>
                     <li><a href="https://www.github.com" target="_blank"><img src=assets/img/Octicons-mark-github.svg class="rss"></a></li>
                     <li><a href="https://www.instagram.com" target="_blank"><img src=assets/img/instagram-filled.svg class="rss"></a></li>
-                    <li><a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter.png class="rss"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter-logo-fill.svg class="rss"></a></li>
                 </ul>
-            </nav>          
+            </nav>     
+            <a href="lista.html" id="enlace">a</a>    
             <h1 class="principal__title">Digimon <span class="principal__title--span">information</span></h1>
             <h2 class="principal__subtitle">Your best <span class="principal__subtitle--span">digimon database</span></h2>
             <form action="lista.html" id="principal__form">   
@@ -51,7 +51,7 @@
                     <button type="submit" id="principal__level--submit"><span class="fa-solid fa-magnifying-glass"></span></button>
                 </fieldset>
                 <nav id="principal__nav-buttons">
-                    <a href="" class="buttons">Contact</a>
+                    <a href="contact.html" class="buttons">Contact</a>
                     <a href="register.html" class="buttons">Register</a>
                     <a href="login.html" class="buttons">Login</a>
                 </nav>

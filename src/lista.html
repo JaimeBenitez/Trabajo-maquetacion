@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" tema="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon information - List</title>
+    <link href="assets/img/logo.png" rel="icon" type="image/x-icon">    
+    <link href="assets/sass/list.sass" rel="stylesheet">
+</head>
+<body>
+    <main>
+        
+        
+        <section id="list">
+            
+            <label id="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <img src="assets/img/logo.png" id="list__logo">                    
+            
+            <form action="lista.html" id="list__form">   
+                <fieldset>             
+                    <input type="text" name="list__name" id="list__name" class="list__input" placeholder="Name">
+                    <button type="submit" id="list__name--submit"><span class="fa-solid fa-magnifying-glass"></span></button>
+                    <button id="list__save" class="buttons">Save</button>               
+                </fieldset>  
+                <fieldset>       
+                    <select  name="list__level" id="list__level" class="list__input">                
+                        <option value="fresh">Fresh</option>
+                        <option value="In-training">In-training</option>
+                        <option value="rookie">Rookie</option>
+                        <option value="champion">Champion</option>
+                        <option value="ultimate">Ultimate</option>
+                        <option value="mega">Mega</option>                        
+                    </select>
+                    <button type="submit" id="list__level--submit"><span class="fa-solid fa-magnifying-glass"></span></button>
+                    <button id="list__share" class="buttons">Share</button>  
+                </fieldset>                
+            </form>            
+            
+        </section>
+        <section id="list__output">
+            <div class="list__output">
+                <h2 class="list__output--title">Greymon</h2>
+                <img src="assets/img/Greymon.png" class="list__output--img">                
+                <h3 class="list__output--subtitle">Champion</h3>
+                <h3 class="list__output--subtitle">Vaccine</h3>
+            </div>
+            <div class="list__output">
+                <h2 class="list__output--title">Greymon</h2>
+                <img src="assets/img/Greymon.png" class="list__output--img">                
+                <h3 class="list__output--subtitle">Champion</h3>
+                <h3 class="list__output--subtitle">Vaccine</h3>
+            </div>
+            <div class="list__output">
+                <h2 class="list__output--title">Greymon</h2>
+                <img src="assets/img/Greymon.png" class="list__output--img">                
+                <h3 class="list__output--subtitle">Champion</h3>
+                <h3 class="list__output--subtitle">Vaccine</h3>
+            </div>
+            
+        </section>
+        <a href="index.html" id="list__back"><img src=assets/img/back-arrow.svg class="arrow"></a>
+    </main>
+    <script src="assets/js/modes.js"></script>
+    <script src="https://kit.fontawesome.com/47648965d1.js" crossorigin="anonymous"></script>
+</body>
+</html>

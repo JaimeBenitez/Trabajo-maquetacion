@@ -1,10 +1,11 @@
 //Estilo para la página de registro
 @import 'variables'  
 @import 'reset'
+@import 'botonCambio'
 
 #register
     width: 50%
-
+    padding: 20px
 
 
 #register__fieldset
@@ -14,7 +15,7 @@
     justify-content: center
     
 .register__subtitle
-    color: $secondary-color
+    color: var(--secondary-color)
     text-shadow: 1px 1px black
     font-family: $font-title
     font-size: $size-subtitle
@@ -24,32 +25,38 @@
     border-radius: 30px
     height: 40px
     width: 50%  
-    background-color: $search-color
+    background-color: var(--search-color)
     font-family: $font-text
     font-size: $size-text
 
 #register__username
     margin-top: 40px
     text-indent: 15px
-    color: $text-color
+    color: var(--text-color)
     
 
 #register__password
     display: block
     margin-top: 40px
     text-indent: 15px
-    color: $text-color
+    color: var(--text-color)
 #register__email
     display: block
     margin-top: 40px
     text-indent: 15px
-    color: $text-color
+    color: var(--text-color)
 
 #register__submit
     margin-top: 40px
 
 #register__toLogin
     margin-top: 40px
+    color: var(--link-color)
+ 
+#register__toLogin:visited
+    color: var(--after-link-color)  
+#register__toLogin:hover
+    color: var(--secondary-color)  
     
 
 #register__img
@@ -58,14 +65,16 @@
     max-width: 180px
 
 
-#register__back
-    margin-top: 40px
+#register__back    
+    width: 30px
     padding-right: 20px
     align-self:  flex-end
 
 .arrow
+    
     min-height: 40px
     max-height: 40px
     min-width: 40px
     max-width: 40px
-  
+    filter: var(--icon-color)
+    
