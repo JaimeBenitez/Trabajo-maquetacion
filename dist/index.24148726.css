@@ -215,7 +215,7 @@ span, option {
 .buttons {
   background-color: var(--secondary-color);
   color: #000;
-  min-width: 30%;
+  width: 30%;
   text-align: center;
   cursor: pointer;
   border-radius: 30px;

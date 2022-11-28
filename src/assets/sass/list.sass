@@ -79,7 +79,7 @@ main
   display: flex
   flex-direction: row
   justify-content: space-between
-  margin-top: 20px
+  margin-top: 100px
 
 
 .list__output
@@ -92,10 +92,8 @@ main
   
 
 .list__output--img
-  max-height: 200px
-  min-height: 200px
-  max-width: 200px
-  min-width: 200px
+  height: 200px  
+  width: 200px  
   display: inline
 
 
@@ -108,10 +106,36 @@ main
   width:100%
 
 .list__output--subtitle
+  display: block
   color: var(--text-color)  
   font-family: $font-title
   font-size: $size-text
   text-align: center
+  margin-top: 40px
+  margin-left: 100px
+
+.img__container
+  padding: 20px
+  text-align: center
+
+.emptyList__img
+  width: 65%
+  
+
+.list__nav
+  display: flex
+  position: fixed
+  justify-content: space-between
+  width: 100%  
+  bottom: 10px
+
+
+
+
+#list__toMyList
+  margin-left: 10px
+  width: 150px
+  
 
 #list__back    
   width: 30px
@@ -119,8 +143,9 @@ main
   align-self:  flex-end
 
 .arrow    
-  min-height: 40px
-  max-height: 40px
-  min-width: 40px
-  max-width: 40px
+  height: 40px  
+  width: 40px  
   filter: var(--icon-color)
+
+:disabled
+  opacity: 50%

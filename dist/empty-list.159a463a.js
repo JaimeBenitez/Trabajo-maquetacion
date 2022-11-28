@@ -5,4 +5,4 @@ function cambiaTema(ev) {
 }
 colorSwitch.addEventListener("change", cambiaTema);
 
-//# sourceMappingURL=suggestions.159a463a.js.map
+//# sourceMappingURL=empty-list.159a463a.js.map
