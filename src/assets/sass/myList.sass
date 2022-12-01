@@ -5,6 +5,12 @@
 body
   background-color: var(--primary-color)
   overflow: hidden 
+
+@media only screen and (max-width: 800px)
+  body
+    overflow: visible
+    position: relative
+
 header
   display: flex 
   position: relative
@@ -13,11 +19,11 @@ header
   flex-direction: row
 //Hacemos flexible el main para poder jugar con el contenido
 main
-  display: flex 
-  position: relative
+  display: flex   
   align-items: center
   justify-content: center
   flex-direction: column 
+  position: initial
   
 #myList__logo
   
@@ -42,6 +48,11 @@ main
 #myList__form  
   padding-left: 100px
   margin-top: 10px
+
+@media only screen and (max-width: 800px)
+  #myList__form
+    width: 100%
+    padding-left: 0px
 
 .myList__byLevel
   display: none
@@ -85,6 +96,10 @@ label, .myList__subtitles
   padding-top: 50px
   padding-right: 100px
 
+@media only screen and (max-width: 800px)
+  .img__container
+    display: none
+
 .myList__img
   width: 100%
   height: 100% 
@@ -98,19 +113,34 @@ label, .myList__subtitles
   height: 460px 
   flex-wrap: wrap 
   position: absolute
-  top: 50
+  top: 149
   right: 100
   display: none
+  @media only screen and (max-width: 800px)
+    top: 50
+
 
 .list__output--section
   display: flex
   flex-flow: column wrap
-  justify-content: space-evenly
+  justify-content: center
   align-items: center
-  width: 40%
+  width: 50%
+@media only screen and (max-width: 800px)
+  .list__output--section  
+    height: 40%
 
 .output__show
   display: flex
+
+@media only screen and (max-width: 800px)
+  .output__show    
+    width: 100vw
+    height: 100vh
+    z-index: 1
+    top: 0
+    right: 0
+    align-items: center
 
 .list__output--img
   height: 300px  
@@ -136,6 +166,7 @@ label, .myList__subtitles
   font-family: $font-title
   font-size: $size-text
   text-align: center
+  margin-bottom: 10px
  
 
 .list__output--text
@@ -144,8 +175,30 @@ label, .myList__subtitles
   font-family: $font-title
   font-size: $size-text
   text-align: center
+  margin-bottom: 40px
+  
+.digimon__back
+  background-color: transparent
+  display: none
+  float: right
+
+@media only screen and (max-width: 800px)
+  .digimon__back
+    display: inline   
+
+.digimon__arrow
+  height: 40px  
+  width: 40px 
+  cursor: pointer
+  position: absolute
+  right: 5
+  bottom: 5
+  
   
 
+@media only screen and (max-width: 800px)
+  .digimon__arrow
+    display: inline
 
 .list__nav
   display: flex

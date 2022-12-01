@@ -5,7 +5,9 @@
 body
   background-color: var(--primary-color)
   overflow: hidden 
-
+@media only screen and (max-width: 800px)
+    body
+        overflow: visible 
 //Hacemos flexible el main para poder jugar con el contenido
 main
   display: flex 
@@ -80,6 +82,12 @@ main
   flex-direction: row
   justify-content: space-between
   margin-top: 100px
+@media only screen and (max-width: 800px)
+    #list__output
+        margin-top: 50px
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
 
 
 .list__output
@@ -89,6 +97,11 @@ main
   margin-right: 10px
   display: flex
   flex-wrap: wrap
+
+@media only screen and (max-width: 800px)
+  .list__output
+    width: 90%
+    margin-bottom: 20px
   
 
 .list__output--img
@@ -129,13 +142,13 @@ main
   width: 100%  
   bottom: 10px
 
-
-
-
 #list__toMyList
   margin-left: 10px
   width: 150px
-  
+
+@media only screen and (max-width: 800px) 
+  #list__toMyList
+    border: 1px solid black 
 
 #list__back    
   width: 30px

@@ -23,47 +23,47 @@
             
             <form  id="myList__form">   
                              
-                    <input type="radio" name="myList" id="myList__level" class="myList__radio" checked>
-                    <label for="level">Level</label>
-                    <input type="radio" name="myList" id="myList__type" class="myList__radio">
-                    <label for="type">Type</label> 
-                    <section class="myList__byLevel show">    
-                        <span class="myList__subtitles">Rookie</span>                      
-                        <ul class="myList__digimon">
-                            <li class="myList__digimon--agumon">Agumon</li>
-                            <li class="myList__digimon--gabumon">Gabumon</li>
-                            <li class="myList__digimon--patamon">Patamon</li>
-                        </ul>
-                        <span class="myList__subtitles">Champion</span>                      
-                        <ul class="myList__digimon">
-                            <li class="myList__digimon--greymon">Greymon</li>
-                            <li class="myList__digimon--tuskmon">Tuskmon</li>
-                            <li class="myList__digimon--tyrannomon">Tyrannomon</li>
-                        </ul>
-                    </section>  
-                    <section class="myList__byType">    
-                        <span class="myList__subtitles">Vaccine</span>                      
-                        <ul class="myList__digimon">
-                            <li class="myList__digimon--agumon">Agumon</li>
-                            <li class="myList__digimon--gabumon">Gabumon</li>
-                            <li class="myList__digimon--patamon">Patamon</li>
-                            <li class="myList__digimon--greymon">Greymon</li>
-                        </ul>
-                        <span class="myList__subtitles">Virus</span>                      
-                        <ul class="myList__digimon">                            
-                            <li class="myList__digimon--tuskmon">Tuskmon</li>                            
-                        </ul>
-                        <span class="myList__subtitles">Data</span>                      
-                        <ul class="myList__digimon">                            
-                            <li class="myList__digimon--tyrannomon">Tyrannomon</li>                            
-                        </ul>
-                    </section>                        
+                <input type="radio" name="myList" id="myList__level" class="myList__radio" checked>
+                <label for="level">Level</label>
+                <input type="radio" name="myList" id="myList__type" class="myList__radio">
+                <label for="type">Type</label> 
+                <section class="myList__byLevel show">    
+                    <span class="myList__subtitles">Rookie</span>                      
+                    <ul class="myList__digimon">
+                        <li class="myList__digimon--agumon">Agumon</li>
+                        <li class="myList__digimon--gabumon">Gabumon</li>
+                        <li class="myList__digimon--patamon">Patamon</li>
+                    </ul>
+                    <span class="myList__subtitles">Champion</span>                      
+                    <ul class="myList__digimon">
+                        <li class="myList__digimon--greymon">Greymon</li>
+                        <li class="myList__digimon--tuskmon">Tuskmon</li>
+                        <li class="myList__digimon--tyrannomon">Tyrannomon</li>
+                    </ul>
+                </section>  
+                <section class="myList__byType">    
+                    <span class="myList__subtitles">Vaccine</span>                      
+                    <ul class="myList__digimon">
+                        <li class="myList__digimon--agumon">Agumon</li>
+                        <li class="myList__digimon--gabumon">Gabumon</li>
+                        <li class="myList__digimon--patamon">Patamon</li>
+                        <li class="myList__digimon--greymon">Greymon</li>
+                    </ul>
+                    <span class="myList__subtitles">Virus</span>                      
+                    <ul class="myList__digimon">                            
+                        <li class="myList__digimon--tuskmon">Tuskmon</li>                            
+                    </ul>
+                    <span class="myList__subtitles">Data</span>                      
+                    <ul class="myList__digimon">                            
+                        <li class="myList__digimon--tyrannomon">Tyrannomon</li>                            
+                    </ul>
+                </section>                        
             </form> 
             <div class="img__container">
                 <picture>
                     <source
-                            media="(min-width: 980px)"
-                            srcset="assets/img/wallpaper.jpg"/>                            
+                        media="(min-width: 980px)"
+                        srcset="assets/img/wallpaper.jpg"/>                            
                     <source srcset="assets/img/Omegamon_tri.png"/>
                 <img src="assets/img/wallpaper.jpg" class="myList__img">   
                 </picture>    
@@ -81,6 +81,7 @@
                     <span class="list__output--subtitle">Type</span>
                     <span class="list__output--text">Vaccine</span>
                 </section>
+                <button id="greymon__back" class="digimon__back"><img src=assets/img/back-arrow.svg class="digimon__arrow"></button>
             </div>
             <div class="list__output" id="list__output--Agumon">
                 <span class="list__output--title">Agumon</span>
@@ -93,6 +94,7 @@
                     <span class="list__output--subtitle">Type</span>
                     <span class="list__output--text">Vaccine</span>
                 </section>
+                <button id="agumon__back" class="digimon__back"><img src=assets/img/back-arrow.svg class="digimon__arrow"></button>
             </div>
             <div class="list__output" id="list__output--Gabumon">
                 <span class="list__output--title">Gabumon</span>
@@ -105,9 +107,10 @@
                     <span class="list__output--subtitle">Type</span>
                     <span class="list__output--text">Vaccine</span>
                 </section>
+                <button id="gabumon__back" class="digimon__back"><img src=assets/img/back-arrow.svg class="digimon__arrow"></button>
             </div>
             <div class="list__output" id="list__output--Patamon">
-                <span class="list__output--title">Greymon</span>
+                <span class="list__output--title">Patamon</span>
                 <section class="list__output--section">
                 <img src="assets/img/Patamon-sf.png" class="list__output--img">  
                 </section> 
@@ -117,6 +120,7 @@
                     <span class="list__output--subtitle">Type</span>
                     <span class="list__output--text">Vaccine</span>
                 </section>
+                <button id="patamon__back" class="digimon__back"><img src=assets/img/back-arrow.svg class="digimon__arrow"></button>
             </div>
             <div class="list__output" id="list__output--Tuskmon">
                 <span class="list__output--title">Tuskmon</span>
@@ -129,42 +133,20 @@
                     <span class="list__output--subtitle">Type</span>
                     <span class="list__output--text">Virus</span>
                 </section>
+                <button id="tuskmon__back" class="digimon__back"><img src=assets/img/back-arrow.svg class="digimon__arrow"></button>
             </div>
             <div class="list__output" id="list__output--Tyrannomon">
-                <span class="list__output--title">Tyrannomon</span>
-                <section class="list__output--section">
-                <img src="assets/img/Tyranomon.png" class="list__output--img">  
-                </section> 
+                <span class="list__output--title">Tyrannomon</span>                
+                <img src="assets/img/Tyranomon.png" class="list__output--img">                  
                 <section class="list__output--section">  
                     <span class="list__output--subtitle">Level</span>           
                     <span class="list__output--text">Champion</span>
                     <span class="list__output--subtitle">Type</span>
                     <span class="list__output--text">Data</span>
                 </section>
+                <button id="tyrannomon__back" class="digimon__back"><img src=assets/img/back-arrow.svg class="digimon__arrow"></button>
             </div>
-        <!--
-            <div class="list__output">                
-                <h2 class="list__output--title">Tuskmon</h2>
-                <section class="list__output--section">
-                    <img src="assets/img/Tuskmon.png" class="list__output--img">     
-                </section> 
-                <section class="list__output--section">          
-                    <h3 class="list__output--subtitle">Champion</h3>
-                    <h3 class="list__output--subtitle">Virus</h3>
-                </section>
-            </div>
-            <div class="list__output">
-                <h2 class="list__output--title">Tyrannomon</h2>
-                <section class="list__output--section">
-                    <img src="assets/img/Tyranomon.png" class="list__output--img">  
-                </section>    
-                <section class="list__output--section">         
-                    <h3 class="list__output--subtitle">Champion</h3>
-                    <h3 class="list__output--subtitle">Data</h3>
-                </section> 
-            </div>
-            
-        </section> -->
+      
         <nav class="list__nav">
             <a href="empty-list.html" class="buttons" id="myList__toList">Search</a>
             <a href="index.html" id="list__back"><img src=assets/img/back-arrow.svg class="arrow"></a>

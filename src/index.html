@@ -21,17 +21,24 @@
         </picture> 
         <section id="principal">
             <nav class="nav-rss">
-                <label id="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider round"></span>
-                </label>
                 <ul>
                     <li><a href="https://www.github.com" target="_blank"><img src=assets/img/github.svg class="rss"></a></li>
                     <li><a href="https://www.instagram.com" target="_blank"><img src=assets/img/instagram-filled.svg class="rss"></a></li>
                     <li><a href="https://www.twitter.com" target="_blank"><img src=assets/img/twitter-logo-fill.svg class="rss"></a></li>
                 </ul>
+                <div class="nav__section">
+                    
+                    <label id="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <a href="user.html"><img src=assets/img/user-circle.svg class="user__link"></a>
+                </div>
+                
             </nav>     
-            <a href="lista.html" id="enlace">a</a>    
+            <!-- Estos enlaces se mantendran ocultos, solo sirven para que parcel pueda renderizar dichas páginas -->
+            <a href="lista.html" class="enlace">a</a>    
+            <a href="error404.html" class="enlace">a</a>
             <h1 class="principal__title">Digimon <span class="principal__title--span">information</span></h1>
             <h2 class="principal__subtitle">Your best <span class="principal__subtitle--span">digimon database</span></h2>
             <form action="lista.html" id="principal__form">   

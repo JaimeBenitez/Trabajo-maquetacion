@@ -1,0 +1,78 @@
+@import 'variables'  
+@import 'reset'
+@import 'botonCambio'
+@import 'style'
+
+body
+  background-color: var(--primary-color)
+  overflow: hidden 
+header
+  display: flex 
+  position: relative
+  align-items: center
+  justify-content: center
+  flex-direction: row
+//Hacemos flexible el main para poder jugar con el contenido
+main
+  display: flex 
+  position: relative
+  align-items: center
+  justify-content: center
+  flex-direction: column
+
+  
+#error__logo
+  
+  width: 200px  
+  height: 100px 
+  
+#switch 
+  position: absolute
+  margin: 0
+  left: 10px
+  top: 10px
+
+.error__title
+  color: var(--secondary-color)
+  text-shadow: 1px 1px black
+  font-family: $font-title
+  font-size: $size-subtitle
+  text-align: center
+  width:100%
+
+.error__subtitle
+  display: block
+  color: var(--secondary-color)  
+  font-family: $font-title
+  font-size: $size-text
+  text-align: center
+  margin-top: 10px
+  margin-bottom: 10px
+
+#error__img--meme
+  width: 400px
+  height: 500px
+  
+.list__nav
+  display: flex
+  position: fixed
+  justify-content: space-between
+  width: 100%  
+  bottom: 10px
+  margin-top: 40px
+
+#myList__toList
+  margin-left: 10px
+  width: 150px
+  
+
+#list__back    
+  width: 30px
+  padding-right: 20px
+  align-self:  flex-end
+
+.arrow    
+  height: 40px  
+  width: 40px  
+  filter: var(--icon-color)
+

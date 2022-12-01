@@ -78,25 +78,25 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#register {
+#user {
   width: 50%;
   padding: 20px;
 }
 
 @media only screen and (max-width: 800px) {
-  #register {
+  #user {
     width: 100%;
   }
 }
 
-#register__fieldset {
+.user__data {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.register__subtitle {
+.user__title {
   color: var(--secondary-color);
   text-shadow: 1px 1px #000;
   text-align: center;
@@ -104,43 +104,22 @@ input:checked + .slider:before {
   font-size: 36px;
 }
 
-.register__input {
-  height: 40px;
-  width: 50%;
-  background-color: var(--search-color);
-  border-radius: 30px;
+.user__subtitle {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Iceberg, cursive;
+  font-size: 30px;
+}
+
+.user__text {
+  color: var(--secondary-color);
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  margin-top: 10px;
   font-family: Gloria Hallelujah, cursive;
   font-size: 20px;
-}
-
-#register__username {
-  text-indent: 15px;
-  color: var(--text-color);
-  margin-top: 40px;
-}
-
-#register__password, #register__email {
-  text-indent: 15px;
-  color: var(--text-color);
-  margin-top: 40px;
-  display: block;
-}
-
-#register__submit {
-  margin-top: 40px;
-}
-
-#register__toLogin {
-  color: var(--link-color);
-  margin-top: 40px;
-}
-
-#register__toLogin:visited {
-  color: var(--after-link-color);
-}
-
-#register__toLogin:hover {
-  color: var(--secondary-color);
 }
 
 #register__img {
@@ -152,6 +131,7 @@ input:checked + .slider:before {
 #register__back {
   width: 30px;
   align-self: flex-end;
+  margin-top: 50px;
   padding-right: 20px;
 }
 
@@ -163,4 +143,4 @@ input:checked + .slider:before {
   filter: var(--icon-color);
 }
 
-/*# sourceMappingURL=register.fa1a39c1.css.map */
+/*# sourceMappingURL=user.2ac6016d.css.map */

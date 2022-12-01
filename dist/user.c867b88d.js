@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"2Hdj4":[function(require,module,exports) {
+})({"dkKhE":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "1289d29227f513d0";
+module.bundle.HMR_BUNDLE_ID = "202f61ebc867b88d";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,99 +531,8 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"eqdoK":[function(require,module,exports) {
-const greymon = document.querySelector(".myList__digimon--greymon");
-const agumon = document.querySelector(".myList__digimon--agumon");
-const gabumon = document.querySelector(".myList__digimon--gabumon");
-const patamon = document.querySelector(".myList__digimon--patamon");
-const tuskmon = document.querySelector(".myList__digimon--tuskmon");
-const tyrannomon = document.querySelector(".myList__digimon--tyrannomon");
-const greymonContainer = document.querySelector("#list__output--Greymon");
-const agumonContainer = document.querySelector("#list__output--Agumon");
-const gabumonContainer = document.querySelector("#list__output--Gabumon");
-const patamonContainer = document.querySelector("#list__output--Patamon");
-const tuskmonContainer = document.querySelector("#list__output--Tuskmon");
-const tyrannomonContainer = document.querySelector("#list__output--Tyrannomon");
-const greymonBack = document.querySelector("#greymon__back");
-const agumonBack = document.querySelector("#agumon__back");
-const gabumonBack = document.querySelector("#gabumon__back");
-const patamonBack = document.querySelector("#patamon__back");
-const tuskmonBack = document.querySelector("#tuskmon__back");
-const tyrannomonBack = document.querySelector("#tyrannomon__back");
-const image = document.querySelector(".myList__img");
-greymon.addEventListener("click", function() {
-    greymonContainer.classList.toggle("output__show");
-    // image.classList.toggle('img__hide')
-    agumonContainer.classList.remove("output__show");
-    gabumonContainer.classList.remove("output__show");
-    patamonContainer.classList.remove("output__show");
-    tuskmonContainer.classList.remove("output__show");
-    tyrannomonContainer.classList.remove("output__show");
-});
-agumon.addEventListener("click", function() {
-    agumonContainer.classList.toggle("output__show");
-    // image.classList.toggle('img__hide')
-    greymonContainer.classList.remove("output__show");
-    gabumonContainer.classList.remove("output__show");
-    patamonContainer.classList.remove("output__show");
-    tuskmonContainer.classList.remove("output__show");
-    tyrannomonContainer.classList.remove("output__show");
-});
-gabumon.addEventListener("click", function() {
-    gabumonContainer.classList.toggle("output__show");
-    // image.classList.toggle('img__hide')
-    greymonContainer.classList.remove("output__show");
-    agumonContainer.classList.remove("output__show");
-    patamonContainer.classList.remove("output__show");
-    tuskmonContainer.classList.remove("output__show");
-    tyrannomonContainer.classList.remove("output__show");
-});
-patamon.addEventListener("click", function() {
-    patamonContainer.classList.toggle("output__show");
-    // image.classList.toggle('img__hide')
-    greymonContainer.classList.remove("output__show");
-    agumonContainer.classList.remove("output__show");
-    gabumonContainer.classList.remove("output__show");
-    tuskmonContainer.classList.remove("output__show");
-    tyrannomonContainer.classList.remove("output__show");
-});
-tuskmon.addEventListener("click", function() {
-    tuskmonContainer.classList.toggle("output__show");
-    // image.classList.toggle('img__hide')
-    greymonContainer.classList.remove("output__show");
-    agumonContainer.classList.remove("output__show");
-    patamonContainer.classList.remove("output__show");
-    gabumonContainer.classList.remove("output__show");
-    tyrannomonContainer.classList.remove("output__show");
-});
-tyrannomon.addEventListener("click", function() {
-    tyrannomonContainer.classList.toggle("output__show");
-    // image.classList.toggle('img__hide')
-    greymonContainer.classList.remove("output__show");
-    agumonContainer.classList.remove("output__show");
-    patamonContainer.classList.remove("output__show");
-    tuskmonContainer.classList.remove("output__show");
-    gabumonContainer.classList.remove("output__show");
-});
-greymonBack.addEventListener("click", function() {
-    greymonContainer.classList.remove("output__show");
-});
-agumonBack.addEventListener("click", function() {
-    agumonContainer.classList.remove("output__show");
-});
-gabumonBack.addEventListener("click", function() {
-    gabumonContainer.classList.remove("output__show");
-});
-patamonBack.addEventListener("click", function() {
-    patamonContainer.classList.remove("output__show");
-});
-tuskmonBack.addEventListener("click", function() {
-    tuskmonContainer.classList.remove("output__show");
-});
-tyrannomonBack.addEventListener("click", function() {
-    tyrannomonContainer.classList.remove("output__show");
-});
+},{}],"kLsd6":[function(require,module,exports) {
 
-},{}]},["2Hdj4","eqdoK"], "eqdoK", "parcelRequire716c")
+},{}]},["dkKhE","kLsd6"], "kLsd6", "parcelRequire716c")
 
-//# sourceMappingURL=myList.27f513d0.js.map
+//# sourceMappingURL=user.c867b88d.js.map

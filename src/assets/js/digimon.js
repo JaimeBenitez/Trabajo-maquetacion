@@ -10,6 +10,12 @@ const gabumonContainer = document.querySelector('#list__output--Gabumon')
 const patamonContainer = document.querySelector('#list__output--Patamon')
 const tuskmonContainer = document.querySelector('#list__output--Tuskmon')
 const tyrannomonContainer = document.querySelector('#list__output--Tyrannomon')
+const greymonBack = document.querySelector('#greymon__back')
+const agumonBack = document.querySelector('#agumon__back')
+const gabumonBack = document.querySelector('#gabumon__back')
+const patamonBack = document.querySelector('#patamon__back')
+const tuskmonBack = document.querySelector('#tuskmon__back')
+const tyrannomonBack = document.querySelector('#tyrannomon__back')
 const image = document.querySelector('.myList__img')
 
 
@@ -83,3 +89,35 @@ tyrannomon.addEventListener('click', function(){
     gabumonContainer.classList.remove('output__show')
     
 })
+
+greymonBack.addEventListener('click', function(){
+   
+    greymonContainer.classList.remove('output__show')
+    
+})
+agumonBack.addEventListener('click', function(){
+   
+    agumonContainer.classList.remove('output__show')
+    
+})
+gabumonBack.addEventListener('click', function(){
+   
+    gabumonContainer.classList.remove('output__show')
+    
+})
+patamonBack.addEventListener('click', function(){
+   
+    patamonContainer.classList.remove('output__show')
+    
+})
+tuskmonBack.addEventListener('click', function(){
+   
+    tuskmonContainer.classList.remove('output__show')
+    
+})
+tyrannomonBack.addEventListener('click', function(){
+   
+    tyrannomonContainer.classList.remove('output__show')
+    
+})
+
