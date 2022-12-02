@@ -2,6 +2,9 @@
 @import 'reset'
 @import 'botonCambio'
 @import 'style'
+@import 'animated-greymon'
+
+   
 
 body
   background-color: var(--primary-color)
@@ -49,9 +52,15 @@ main
   margin-top: 10px
   margin-bottom: 10px
 
+#img-container
+  display: flex
+  justify-content: space-between
+  
 #error__img--meme
   width: 400px
   height: 500px
+  @media only screen and (max-width: 800px)
+    display: none
   
 .list__nav
   display: flex

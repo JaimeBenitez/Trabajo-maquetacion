@@ -328,6 +328,39 @@ span, option {
   transform: scale(1.05);
 }
 
+@keyframes run-x {
+  from {
+    background-position-x: 0;
+  }
+
+  to {
+    background-position-x: -1690px;
+  }
+}
+
+@keyframes run-y {
+  from {
+    background-position-y: 0;
+  }
+
+  to {
+    background-position-y: -360px;
+  }
+}
+
+#sprite {
+  height: 360px;
+  width: 422.5px;
+  background-image: url("metal-greymon.cff54f23.png");
+  background-position: 0 0;
+  align-self: center;
+  margin-right: 20px;
+  animation-name: run-x, run-y;
+  animation-duration: .8s, .8s;
+  animation-timing-function: steps(4, end), step-end;
+  animation-iteration-count: infinite;
+}
+
 body {
   background-color: var(--primary-color);
   overflow: hidden;
@@ -380,9 +413,20 @@ main {
   display: block;
 }
 
+#img-container {
+  justify-content: space-between;
+  display: flex;
+}
+
 #error__img--meme {
   width: 400px;
   height: 500px;
+}
+
+@media only screen and (max-width: 800px) {
+  #error__img--meme {
+    display: none;
+  }
 }
 
 .list__nav {

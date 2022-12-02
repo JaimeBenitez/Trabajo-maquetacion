@@ -1,0 +1,48 @@
+//Fields to edit
+$imageWidth: 1690  // Width of whole sprite
+$imageHeight: 360 // Height of whole sprite
+$steps-x: 4       // How much images horisontally
+$steps-y: 1       // How much images vertically
+$duration: 0.8    // Duration of the animation
+$image: '../img/metal-greymon.png' 
+//Sprite image
+
+//Calculation (DO NOT EDIT!!!)
+$height: calc($imageHeight / $steps-y) + px
+$width: calc($imageWidth / $steps-x) + px
+$next-step: $duration * $steps-y + s
+
+
+@keyframes run-x 
+    from 
+        background-position-x: 0
+    
+    to 
+        background-position-x: -$imageWidth + px
+    
+
+
+@keyframes run-y 
+    from 
+        background-position-y: 0
+    
+    to 
+        background-position-y: -$imageHeight + px
+
+//Styling (Not necessary to edit)
+#sprite 
+    height: $height
+    width: $width
+    background-image: url($image)
+    background-position: 0 0
+    align-self: center
+    margin-right: 20px
+  
+    animation-name: run-x, run-y
+    animation-duration: $duration + s, $next-step
+    animation-iteration-count: infinite
+    animation-timing-function: steps($steps-x), steps($steps-y)
+
+
+
+    
