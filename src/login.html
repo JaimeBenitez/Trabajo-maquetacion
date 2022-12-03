@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimon information-Login</title>
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
-    <link href="assets/sass/style.sass" rel="stylesheet">    
-    <link href="assets/sass/login.sass" rel="stylesheet">
-    
-   
+    <link href="assets/sass/main.sass" rel="stylesheet">  
 </head>
-<body>
-    <main>
-        
-        
+<body id="login__body">
+    <main id="login__main">       
         <picture>
             <source
                     media="(min-width: 980px)"
@@ -31,15 +26,13 @@
                 </ul>
                 <div class="nav__section">
                     
-                    <label id="switch">
+                    <label id="switch" class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
                     </label>
                     <a href="user.html"><img src=assets/img/user-circle.svg class="user__link"></a>
                 </div>
-            </nav>     
-            
-            
+            </nav>              
             <form action="index.html" id="login__form">   
                 <fieldset id="login__fieldset"> 
                     <h2 class="login__subtitle">Login</h2>            
@@ -51,7 +44,6 @@
                     <a href="index.html" id="login__back"><img src=assets/img/back-arrow.svg class="arrow"></a>
                 </fieldset>                
             </form>
-            
         </section>
     </main>
     <script src="assets/js/modes.js"></script>

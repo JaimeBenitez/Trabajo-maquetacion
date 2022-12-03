@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimon information - List</title>
     <link href="/logo.7c849107.png" rel="icon" type="image/x-icon">    
-    <link href="/myList.b263a7d8.css" rel="stylesheet">
+    <link href="/index.ad85b7e3.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <label id="switch">
+<body id="myList__body">
+    <header id="myList__header">
+        <label id="switch" class="list__switch">
             <input type="checkbox" checked="">
             <span class="slider round"></span>
         </label>
         <img src="/logo.7c849107.png" id="myList__logo"> 
     </header> 
-    <main>
-        
+    <main id="myList__main">      
         
         <section id="myList">                             
             
             <form id="myList__form">   
                              
                 <input type="radio" name="myList" id="myList__level" class="myList__radio" checked="">
-                <label for="level">Level</label>
+                <label for="level" class="myList__label">Level</label>
                 <input type="radio" name="myList" id="myList__type" class="myList__radio">
-                <label for="type">Type</label> 
+                <label for="type" class="myList__label">Type</label> 
                 <section class="myList__byLevel show">    
                     <span class="myList__subtitles">Rookie</span>                      
                     <ul class="myList__digimon">
@@ -59,7 +58,7 @@
                     </ul>
                 </section>                        
             </form> 
-            <div class="img__container">
+            <div class="myList__img__container">
                 <picture>
                     <source media="(min-width: 980px)" srcset="/wallpaper.79781038.jpg">                            
                     <source srcset="/Omegamon_tri.590c6b26.png">
@@ -68,86 +67,86 @@
             </div>    
         </section>
          
-            <div class="list__output" id="list__output--Greymon">
-                <span class="list__output--title">Greymon</span>
-                <section class="list__output--section">
-                <img src="/Greymon.2a997a49.png" class="list__output--img">  
+            <div class="myList__output" id="myList__output--Greymon">
+                <span class="myList__output--title">Greymon</span>
+                <section class="myList__output--section">
+                <img src="/Greymon.2a997a49.png" class="myList__output--img">  
                 </section> 
-                <section class="list__output--section">  
-                    <span class="list__output--subtitle">Level</span>           
-                    <span class="list__output--text">Champion</span>
-                    <span class="list__output--subtitle">Type</span>
-                    <span class="list__output--text">Vaccine</span>
+                <section class="myList__output--section">  
+                    <span class="myList__output--subtitle">Level</span>           
+                    <span class="myList__output--text">Champion</span>
+                    <span class="myList__output--subtitle">Type</span>
+                    <span class="myList__output--text">Vaccine</span>
                 </section>
                 <button id="greymon__back" class="digimon__back"><img src="/back-arrow.acd43ddc.svg" class="digimon__arrow"></button>
             </div>
-            <div class="list__output" id="list__output--Agumon">
-                <span class="list__output--title">Agumon</span>
-                <section class="list__output--section">
-                <img src="/Agumon.234c7e28.png" class="list__output--img">  
+            <div class="myList__output" id="myList__output--Agumon">
+                <span class="myList__output--title">Agumon</span>
+                <section class="myList__output--section">
+                <img src="/Agumon.234c7e28.png" class="myList__output--img">  
                 </section> 
-                <section class="list__output--section">  
-                    <span class="list__output--subtitle">Level</span>           
-                    <span class="list__output--text">Rookie</span>
-                    <span class="list__output--subtitle">Type</span>
-                    <span class="list__output--text">Vaccine</span>
+                <section class="myList__output--section">  
+                    <span class="myList__output--subtitle">Level</span>           
+                    <span class="myList__output--text">Rookie</span>
+                    <span class="myList__output--subtitle">Type</span>
+                    <span class="myList__output--text">Vaccine</span>
                 </section>
                 <button id="agumon__back" class="digimon__back"><img src="/back-arrow.acd43ddc.svg" class="digimon__arrow"></button>
             </div>
-            <div class="list__output" id="list__output--Gabumon">
-                <span class="list__output--title">Gabumon</span>
-                <section class="list__output--section">
-                <img src="/Gabumon.36912e6f.png" class="list__output--img">  
+            <div class="myList__output" id="myList__output--Gabumon">
+                <span class="myList__output--title">Gabumon</span>
+                <section class="myList__output--section">
+                <img src="/Gabumon.36912e6f.png" class="myList__output--img">  
                 </section> 
-                <section class="list__output--section">  
-                    <span class="list__output--subtitle">Level</span>           
-                    <span class="list__output--text">Champion</span>
-                    <span class="list__output--subtitle">Type</span>
-                    <span class="list__output--text">Vaccine</span>
+                <section class="myList__output--section">  
+                    <span class="myList__output--subtitle">Level</span>           
+                    <span class="myList__output--text">Champion</span>
+                    <span class="myList__output--subtitle">Type</span>
+                    <span class="myList__output--text">Vaccine</span>
                 </section>
                 <button id="gabumon__back" class="digimon__back"><img src="/back-arrow.acd43ddc.svg" class="digimon__arrow"></button>
             </div>
-            <div class="list__output" id="list__output--Patamon">
-                <span class="list__output--title">Patamon</span>
-                <section class="list__output--section">
-                <img src="/Patamon-sf.df2a024a.png" class="list__output--img">  
+            <div class="myList__output" id="myList__output--Patamon">
+                <span class="myList__output--title">Patamon</span>
+                <section class="myList__output--section">
+                <img src="/Patamon-sf.df2a024a.png" class="myList__output--img">  
                 </section> 
-                <section class="list__output--section">  
-                    <span class="list__output--subtitle">Level</span>           
-                    <span class="list__output--text">Rookie</span>
-                    <span class="list__output--subtitle">Type</span>
-                    <span class="list__output--text">Vaccine</span>
+                <section class="myList__output--section">  
+                    <span class="myList__output--subtitle">Level</span>           
+                    <span class="myList__output--text">Rookie</span>
+                    <span class="myList__output--subtitle">Type</span>
+                    <span class="myList__output--text">Vaccine</span>
                 </section>
                 <button id="patamon__back" class="digimon__back"><img src="/back-arrow.acd43ddc.svg" class="digimon__arrow"></button>
             </div>
-            <div class="list__output" id="list__output--Tuskmon">
-                <span class="list__output--title">Tuskmon</span>
-                <section class="list__output--section">
-                <img src="/Tuskmon.e85ef56c.png" class="list__output--img">  
+            <div class="myList__output" id="myList__output--Tuskmon">
+                <span class="myList__output--title">Tuskmon</span>
+                <section class="myList__output--section">
+                <img src="/Tuskmon.e85ef56c.png" class="myList__output--img">  
                 </section> 
-                <section class="list__output--section">  
-                    <span class="list__output--subtitle">Level</span>           
-                    <span class="list__output--text">Champion</span>
-                    <span class="list__output--subtitle">Type</span>
-                    <span class="list__output--text">Virus</span>
+                <section class="myList__output--section">  
+                    <span class="myList__output--subtitle">Level</span>           
+                    <span class="myList__output--text">Champion</span>
+                    <span class="myList__output--subtitle">Type</span>
+                    <span class="myList__output--text">Virus</span>
                 </section>
                 <button id="tuskmon__back" class="digimon__back"><img src="/back-arrow.acd43ddc.svg" class="digimon__arrow"></button>
             </div>
-            <div class="list__output" id="list__output--Tyrannomon">
-                <span class="list__output--title">Tyrannomon</span>                
-                <img src="/Tyranomon.b61f8aea.png" class="list__output--img">                  
-                <section class="list__output--section">  
-                    <span class="list__output--subtitle">Level</span>           
-                    <span class="list__output--text">Champion</span>
-                    <span class="list__output--subtitle">Type</span>
-                    <span class="list__output--text">Data</span>
+            <div class="myList__output" id="myList__output--Tyrannomon">
+                <span class="myList__output--title">Tyrannomon</span>                
+                <img src="/Tyranomon.b61f8aea.png" class="tyrannomon__img">                  
+                <section class="myList__output--section">  
+                    <span class="myList__output--subtitle">Level</span>           
+                    <span class="myList__output--text">Champion</span>
+                    <span class="myList__output--subtitle">Type</span>
+                    <span class="myList__output--text">Data</span>
                 </section>
                 <button id="tyrannomon__back" class="digimon__back"><img src="/back-arrow.acd43ddc.svg" class="digimon__arrow"></button>
             </div>
       
-        <nav class="list__nav">
+        <nav class="myList__nav">
             <a href="/empty-list.html" class="buttons" id="myList__toList">Search</a>
-            <a href="/index.html" id="list__back"><img src="/back-arrow.acd43ddc.svg" class="arrow"></a>
+            <a href="/index.html" id="myList__back"><img src="/back-arrow.acd43ddc.svg" class="arrow"></a>
         </nav>
     </main>
     <script src="/myList.5192465c.js" defer=""></script>

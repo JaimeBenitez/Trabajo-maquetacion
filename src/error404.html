@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 404</title>
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
-    <link href="assets/sass/error404.sass" rel="stylesheet" id="estilo">
+    <link href="assets/sass/main.sass" rel="stylesheet" id="estilo">
     
 </head>
-<body>
-    <header>
-        <label id="switch">
+<body id="error__body">
+    <header id="error__header">
+        <label id="switch" class="list__switch">
             <input type="checkbox" checked>
             <span class="slider round"></span>
         </label>
         <img src="assets/img/logo.png" id="error__logo"> 
     </header> 
-    <main>
+    <main id="error__main">
         <h1 class="error__title">ERROR 404 - NOT FOUND</h1>
         <h2 class="error__subtitle">Did you search for a Pokemon?</h2>
         <div id="img-container">
             <div id="sprite"></div>        
             <img src="assets/img/digimon-meme.png" id="error__img--meme"> 
         </div>       
-        <nav class="list__nav">
-            <a href="empty-list.html" class="buttons" id="myList__toList">Search</a>
-            <a href="index.html" id="list__back"><img src=assets/img/back-arrow.svg class="arrow"></a>
+        <nav class="error__nav">
+            <a href="empty-list.html" class="buttons" id="error__myList__toList">Search</a>
+            <a href="index.html" id="error__back"><img src=assets/img/back-arrow.svg class="arrow"></a>
         </nav>       
     </main>
     <script src="assets/js/modes.js"></script>

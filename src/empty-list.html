@@ -6,20 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimon information - List</title>
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">    
-    <link href="assets/sass/list.sass" rel="stylesheet">
+    <link href="assets/sass/main.sass" rel="stylesheet">
 </head>
-<body>
-    <main>
-        
-        
-        <section id="list">
-            
-            <label id="switch">
+<body class="list__body">
+    <main class="list__main">        
+        <section id="list">            
+            <label id="switch" class="list__switch">
                 <input type="checkbox" checked>
                 <span class="slider round"></span>
             </label>
-            <img src="assets/img/logo.png" id="list__logo">                    
-            
+            <img src="assets/img/logo.png" id="list__logo">      
             <form action="lista.html" id="list__form">   
                 <fieldset>             
                     <input type="text" name="list__name" id="list__name" class="list__input" placeholder="Name">
@@ -52,7 +48,7 @@
         </div>  
         <nav class="list__nav">
             <a href="myList.html" class="buttons" id="list__toMyList">My list</a>
-            <a href="index.html" id="list__back"><img src=assets/img/back-arrow.svg class="arrow"></a>
+            <a href="index.html" class="list__back"><img src=assets/img/back-arrow.svg class="arrow"></a>
         </nav>
     </main>
     <script src="assets/js/modes.js"></script>

@@ -1,5 +1,6 @@
-@import 'variables'  
-@import 'reset'
+//Este archivo contiene todo lo necesario para el cambio de tema usando un boton slider. 
+//Para poder realizar el cambio es necesario pasar las variables sass a  variables css.
+//Esto es debido a que las variables sass no son capaces de renderizarse en tiempo de ejecución.
 
 [tema="light"]
     --primary-color: #{$primary-color}
@@ -21,8 +22,7 @@
 
 //Botón de cambio de tema
 
-#switch 
-    position: relative
+#switch     
     display: inline-block
     width: 60px
     height: 34px

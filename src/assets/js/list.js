@@ -1,3 +1,4 @@
+//Este archivo le da funcionalidad a los round button de la lista del usuario, mostrando la lista ordenada de una manera u otra 
 const levelButton = document.querySelector('#myList__level')
 const typeButton = document.querySelector('#myList__type')
 const levelList = document.querySelector('.myList__byLevel')

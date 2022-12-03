@@ -1,3 +1,4 @@
+//Funcionalidad del boton de cambio a tema oscuro
 const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
             function cambiaTema(ev){
                 if(ev.target.checked){

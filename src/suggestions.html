@@ -6,15 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimon information-Contact</title>
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
-    <link href="assets/sass/style.sass" rel="stylesheet"> 
-    <link href="assets/sass/suggestions.sass" rel="stylesheet">
-    
-   
+    <link href="assets/sass/main.sass" rel="stylesheet">    
 </head>
-<body>
-    <main>
-        
-        
+<body id="suggestions__body">
+    <main id="suggestions__main">       
         <picture>
             <source
                     media="(min-width: 980px)"
@@ -31,15 +26,13 @@
                 </ul>
                 <div class="nav__section">
                     
-                    <label id="switch">
+                    <label id="switch" class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
                     </label>
                     <a href="user.html"><img src=assets/img/user-circle.svg class="user__link"></a>
                 </div>
-            </nav>     
-            
-            
+            </nav>                 
             <form  id="suggestions__form" action="index.html">   
                 <fieldset id="suggestions__fieldset"> 
                     <h2 class="suggestions__subtitle">Suggestions</h2>            
@@ -48,13 +41,9 @@
                     <img src="assets/img/Patamon-sf.png" id="suggestions__img">
                     <a href="index.html" id="suggestions__back" ><img src=assets/img/back-arrow.svg class="arrow"></a>
                 </fieldset>                
-            </form>
-            
-        </section>       
-        
-    </main>
-    
-    <script src="assets/js/modes.js"></script>
-    
+            </form>            
+        </section>        
+    </main>    
+    <script src="assets/js/modes.js"></script>    
 </body>
 </html>

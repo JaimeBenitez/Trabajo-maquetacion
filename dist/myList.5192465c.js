@@ -532,6 +532,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"9BUOd":[function(require,module,exports) {
+//Funcionalidad del boton de cambio a tema oscuro
 const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
 function cambiaTema(ev) {
     if (ev.target.checked) document.documentElement.setAttribute("tema", "light");

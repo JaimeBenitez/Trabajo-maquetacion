@@ -1,3 +1,4 @@
+//Este archivo permite que al darle al botón "collaborators" en la seccion de contacto aparezca o desaparezca el contenedor del mismo nombre
 const collaboratorsButton = document.querySelector("#contact__collaborators");
 const collaboratorsSection = document.querySelector(".collaborators");
 const collaboratorsBack = document.querySelector("#collaborators__back");

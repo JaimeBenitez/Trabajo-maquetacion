@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digimon information-Register</title>
     <link href="assets/img/logo.png" rel="icon" type="image/x-icon">
-    <link href="assets/sass/style.sass" rel="stylesheet"> 
-    <link href="assets/sass/register.sass" rel="stylesheet">
+    <link href="assets/sass/main.sass" rel="stylesheet">    
    
     <!-- Como podemos observar, ademas de las importaciones también se puede escribir css directamente 
     mediante la etiqueta <style>, aunque no es recomendable, ya que ademas de expandir el codigo de la 
@@ -18,11 +17,10 @@
             width: 50%;
         }
     </style> --> 
+    
 </head>
-<body>
-    <main>
-        
-        
+<body id="register__body">
+    <main id="register__main">        
         <picture>
             <source
                     media="(min-width: 980px)"
@@ -39,7 +37,7 @@
                 </ul>
                 <div class="nav__section">
                     
-                    <label id="switch">
+                    <label id="switch" class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
                     </label>
@@ -60,7 +58,6 @@
                     <a href="index.html" id="register__back"><img src=assets/img/back-arrow.svg class="arrow"></a>
                 </fieldset>                
             </form>
-            
         </section>
     </main>
     <script src="assets/js/modes.js"></script>

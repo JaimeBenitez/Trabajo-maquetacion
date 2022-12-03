@@ -1,56 +1,39 @@
-@import 'variables'  
-@import 'reset'
-@import 'botonCambio'
-@import 'style'
-body
+//Estilo para la pantalla de lista guardada por el usuario
+#myList__body
   background-color: var(--primary-color)
   overflow: hidden 
-
-@media only screen and (max-width: 800px)
-  body
-    overflow: visible
+  @media only screen and (max-width: 800px)      
     position: relative
 
-header
+#myList__header
   display: flex 
   position: relative
   align-items: center
   justify-content: center
   flex-direction: row
-//Hacemos flexible el main para poder jugar con el contenido
-main
+
+#myList__main
   display: flex   
   align-items: center
   justify-content: center
   flex-direction: column 
   position: initial
   
-#myList__logo
-  
+#myList__logo  
   width: 200px 
   height: 100px
-   
-#switch 
- position: absolute
- top: 10px
- left: 10px
- margin: 0
-  
 
 #myList
   width: 100%  
   text-align: center
   display: flex
   flex-direction: row
-  justify-content: space-between
-  
+  justify-content: space-between  
 
 #myList__form  
   padding-left: 100px
   margin-top: 10px
-
-@media only screen and (max-width: 800px)
-  #myList__form
+  @media only screen and (max-width: 800px)  
     width: 100%
     padding-left: 0px
 
@@ -63,10 +46,10 @@ main
 .show
   display: block
 
-input
+.myList__radio
   margin-left: 20px
 
-label, .myList__subtitles  
+.myList__label, .myList__subtitles  
   color: var(--secondary-color)
   text-shadow: 1px 1px black  
   font-family: $font-title
@@ -90,24 +73,21 @@ label, .myList__subtitles
   margin-top: 10px
   cursor: pointer
 
-.img__container
+.myList__img__container
   width: 48%
   height: 450px      
   padding-top: 50px
   padding-right: 100px
-
-@media only screen and (max-width: 800px)
-  .img__container
+  @media only screen and (max-width: 800px)  
     display: none
 
 .myList__img
   width: 100%
   height: 100% 
-  object-fit: cover
-  
-  
-
-.list__output
+  object-fit: cover  
+//Aqui hemos usado una posicion absoluta para posicionar el contenedor que aparece por encima de la imagen anterior. Esta posicion
+//es modificada en la media query
+.myList__output
   background-color: var(--secondary-color)  
   width: 48%
   height: 460px 
@@ -120,21 +100,19 @@ label, .myList__subtitles
     top: 50
 
 
-.list__output--section
+.myList__output--section
   display: flex
   flex-flow: column wrap
   justify-content: center
   align-items: center
   width: 50%
-@media only screen and (max-width: 800px)
-  .list__output--section  
+  @media only screen and (max-width: 800px)  
     height: 40%
 
 .output__show
   display: flex
-
-@media only screen and (max-width: 800px)
-  .output__show    
+  //En el caso del modo móvil, necesitamos que el contenedor ocupe toda la pantalla
+  @media only screen and (max-width: 800px)    
     width: 100vw
     height: 100vh
     z-index: 1
@@ -142,16 +120,24 @@ label, .myList__subtitles
     right: 0
     align-items: center
 
-.list__output--img
+.myList__output--img
   height: 300px  
   width: 300px  
   display: inline
 
+//Especificamos esta imagen ya que debido a las medidas originales de la imagen necesita una media query diferente
+.tyrannomon__img
+  height: 300px  
+  width: 300px  
+  display: inline
+  @media only screen and (max-width: 1300px) 
+    height: 200px
+    width: 200px
+
 .img__hide
   display: none
 
-
-.list__output--title
+.myList__output--title
   color: var(--text-color)
   text-shadow: 1px 1px black
   font-family: $font-title
@@ -159,17 +145,16 @@ label, .myList__subtitles
   text-align: center
   width: 100%
 
-.list__output--subtitle
+.myList__output--subtitle
   display: block
   color: var(--text-color) 
   text-shadow: 1px 1px black 
   font-family: $font-title
   font-size: $size-text
   text-align: center
-  margin-bottom: 10px
- 
+  margin-bottom: 10px 
 
-.list__output--text
+.myList__output--text
   display: block
   color: var(--text-color)  
   font-family: $font-title
@@ -181,9 +166,7 @@ label, .myList__subtitles
   background-color: transparent
   display: none
   float: right
-
-@media only screen and (max-width: 800px)
-  .digimon__back
+  @media only screen and (max-width: 800px) 
     display: inline   
 
 .digimon__arrow
@@ -193,14 +176,10 @@ label, .myList__subtitles
   position: absolute
   right: 5
   bottom: 5
-  
-  
-
-@media only screen and (max-width: 800px)
-  .digimon__arrow
+  @media only screen and (max-width: 800px)  
     display: inline
 
-.list__nav
+.myList__nav
   display: flex
   position: fixed
   justify-content: space-between
@@ -209,15 +188,11 @@ label, .myList__subtitles
 
 #myList__toList
   margin-left: 10px
-  width: 150px
-  
+  width: 150px  
 
-#list__back    
+#myList__back    
   width: 30px
   padding-right: 20px
   align-self:  flex-end
 
-.arrow    
-  height: 40px  
-  width: 40px  
-  filter: var(--icon-color)
+

@@ -532,18 +532,20 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"eqdoK":[function(require,module,exports) {
+// Este archivo le da funcionalidad a la lista guardada por el usuario, permitiendo que aparezcan o desaparezca los contenedores unidos a sus
+// correspondientes botones
 const greymon = document.querySelector(".myList__digimon--greymon");
 const agumon = document.querySelector(".myList__digimon--agumon");
 const gabumon = document.querySelector(".myList__digimon--gabumon");
 const patamon = document.querySelector(".myList__digimon--patamon");
 const tuskmon = document.querySelector(".myList__digimon--tuskmon");
 const tyrannomon = document.querySelector(".myList__digimon--tyrannomon");
-const greymonContainer = document.querySelector("#list__output--Greymon");
-const agumonContainer = document.querySelector("#list__output--Agumon");
-const gabumonContainer = document.querySelector("#list__output--Gabumon");
-const patamonContainer = document.querySelector("#list__output--Patamon");
-const tuskmonContainer = document.querySelector("#list__output--Tuskmon");
-const tyrannomonContainer = document.querySelector("#list__output--Tyrannomon");
+const greymonContainer = document.querySelector("#myList__output--Greymon");
+const agumonContainer = document.querySelector("#myList__output--Agumon");
+const gabumonContainer = document.querySelector("#myList__output--Gabumon");
+const patamonContainer = document.querySelector("#myList__output--Patamon");
+const tuskmonContainer = document.querySelector("#myList__output--Tuskmon");
+const tyrannomonContainer = document.querySelector("#myList__output--Tyrannomon");
 const greymonBack = document.querySelector("#greymon__back");
 const agumonBack = document.querySelector("#agumon__back");
 const gabumonBack = document.querySelector("#gabumon__back");
